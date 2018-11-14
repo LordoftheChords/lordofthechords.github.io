@@ -9,7 +9,7 @@ $(document).ready(function() {
     });
     
 
-    $(".scroll-menu").hide();
+    // $(".scroll-menu").hide();
 
     var topofDiv = $(".header-section").offset().top; //gets offset of header
     var height = $(".header-section").outerHeight(); //gets height of header
@@ -18,9 +18,9 @@ $(document).ready(function() {
         if($(window).scrollTop() > (topofDiv + height) - 60){
            $(".scroll-menu").show();
         }
-        else{
-           $(".scroll-menu").hide();
-        }
+        // else{
+        //    $(".scroll-menu").hide();
+        // }
     });
 
     

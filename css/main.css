@@ -33,11 +33,11 @@ h1 {
 }
 
 .color-theme {
-	color:#ED4545;
+	color:black;
 }
 
 .bkg-theme {
-	background:#ED4545;
+	background: black;
 }
 
 .border-theme {
@@ -132,14 +132,10 @@ h1 {
 /*---- Header ----*/
 
 .header-section {
-	background:url('../images/header-cover.jpg');
-	background-size:cover;
+	
 }
 
-.header-section .row {
-	padding-top:12rem;
-	padding-bottom:14rem;
-}
+
 
 .p2 {
 	font-size:24px;
@@ -154,15 +150,31 @@ h1 {
 .header-logo {
 	width:100%;
 }
+/* Main images*/
+.main-center-img{
+	max-width: 100%;
+	max-height:100%;
+}
+.main-left-img{
+	max-width: 100%;
+	max-height: 100%;
+}
+.main-right-img{
+	position: absolute;
+	z-index:1;
+	max-width:100%;
+	max-height:100%;
+}
 /*---- Signup Form ----*/
-#mc_embed_signup { 
+#mc_embed_signup {
+	position: absolute;
+	z-index:2; 
     font:14px Helvetica,Arial,sans-serif;
-    background: rgba(0, 0, 0, 0.5);
-    border-radius: 25px;
 }
 /* Signup Form Font */
 #mc_embed_signup label{
-    color: white;
+	color: black;
+	padding-bottom: 0;
 }
 /* Signup Form Button */
 

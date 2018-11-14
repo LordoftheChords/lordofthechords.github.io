@@ -4,11 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="css/normalize.css" />
-        <link type="text/css" rel="stylesheet" href="css/skeleton.css" />
+        <!-- <link type="text/css" rel="stylesheet" href="css/skeleton.css" /> -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
         <link type="text/css" rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,400|Rubik:400,500" rel="stylesheet">
-        <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
 
         <title>Lord of the Chords</title>
         <link rel="shortcut icon" type="image/png" href="images/favicon.ico"/>
@@ -36,29 +38,36 @@
                 <li><a class="menu-link" href="#team">Team</a></li>
                 <li><a class="menu-link" href="#faq">FAQ</a></li>
             </ul>
-            <div class="container">
-                <div class="row">   
-                    <div class="six columns float-left">
+            <!-- <div class="container"> -->
+                    
+                <div class="row">
+                    <div class="col-sm">
+                        <img class="main-left-img" src ="images/bae.png">
+                    </div>
+                    <div class="col-sm">
+                        <img class="main-center-img" src="images/lotcTitle.png">
+                    </div>
+                    <div class="col-sm">
+                        <img class="main-right-img" src="images/bach.png">
                         <!--  Mailchimp Signup Form -->
                             <div id="mc_embed_signup">
                                 <form action="https://lordofthechords.us19.list-manage.com/subscribe/post?u=6b7e4a798687d13a13ac848d5&amp;id=a7ac4d90f8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                     <div id="mc_embed_signup_scroll">
                                         <label for="mce-EMAIL">Do you want to be the Lord of the Chords??</label>
                                         <div class="mc-field-group">
-                                            <label for="mce-FNAME">First Name </label>
-                                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                                            <!-- <label for="mce-FNAME">First Name </label> -->
+                                            <input type="text" value="" name="FNAME" class="required name" id="mce-FNAME" placeholder = "Name*">
                                         </div>
                                         <div class="mc-field-group">
-                                            <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+                                            <!-- <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span> -->
                                         </label>
-                                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder = "Email*">
                                         </div>
                                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6b7e4a798687d13a13ac848d5_a7ac4d90f8" tabindex="-1" value=""></div>
-                                        <div class="clear"><input type="submit" value = "YES!" name="subscribe" id = "mc-embedded-subscribe" ></div>
-                                        <!-- <div class="clear"><button type="submit" name="subscribe" id="mc-embedded-subscribe">
-                                                <i class="fas fa-music"></i> YES
-                                        </div> -->
+                                        <!-- <div class="clear"><input type="submit" value = "YES!" name="subscribe" id = "mc-embedded-subscribe" class ="button"></div> -->
+                                        <button class= "button" type="submit" name="subscribe" id="mc-embedded-subscribe">
+                                                <i class="fas fa-music"></i> YES!
                                     </div>
                                 </form>
                             </div>
@@ -67,12 +76,12 @@
                     </div>
                     <div class="clear"></div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
         <div class="section align-center" id="about">
             <div class="container">
                 <p class="p-main" style="text-align:center;">
-                    <!-- TODO -->
+                    test
                 </p>
             </div>
         </div>
