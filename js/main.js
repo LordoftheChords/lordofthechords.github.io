@@ -14,14 +14,14 @@ $(document).ready(function() {
     var topofDiv = $(".header-section").offset().top; //gets offset of header
     var height = $(".header-section").outerHeight(); //gets height of header
 
-    $(window).scroll(function(){
-        if($(window).scrollTop() > (topofDiv + height) - 60){
-           $(".scroll-menu").show();
-        }
-        // else{
-        //    $(".scroll-menu").hide();
-        // }
-    });
+    // $(window).scroll(function(){
+    //     if($(window).scrollTop() > (topofDiv + height) - 60){
+    //        $(".scroll-menu").show();
+    //     }
+    //     // else{
+    //     //    $(".scroll-menu").hide();
+    //     // }
+    // });
 
     
 
@@ -35,19 +35,6 @@ $(document).ready(function() {
     })
 });
 
-function openCity(evt, cityName) {
-  var i, x, tablinks;
-  x = document.getElementsByClassName("city");
-  for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < x.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" tab-active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " tab-active";
-}
 
 
 
