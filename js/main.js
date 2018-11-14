@@ -8,13 +8,6 @@ $(document).ready(function() {
         $("body").scrollLeft(0);    
     });
     
-    $(function(){
-        var x = 0;
-        setInterval(function(){
-            x-=1;
-            $('.header-section').css('background-position', x + 'px 0');
-        }, 70);
-    });
 
     $(".scroll-menu").hide();
 
