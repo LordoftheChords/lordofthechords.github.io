@@ -87,7 +87,8 @@ h1 {
 }
 
 .scroll-menu ul{
-	padding:13px;
+	padding-top:13px;
+	padding-bottom: 13px;
 }
 
 .menu-icon {
