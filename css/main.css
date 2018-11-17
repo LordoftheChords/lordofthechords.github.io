@@ -137,11 +137,11 @@ h1 {
 	max-height:100%;
 }
 /*---- Signup Form ----*/
-#mc_embed_signup {
-	position: absolute;
-	top:10px;
-	z-index:2; 
-    font:14px Helvetica,Arial,sans-serif;
+
+#mc_embed_signup_scroll { 
+	font:14px Helvetica,Arial,sans-serif;
+	margin: 50px auto auto auto;
+	width:85%;
 }
 
 #mc_embed_signup .button:hover{
@@ -157,6 +157,10 @@ h1 {
 #mc_embed_signup .mc-field-group{
 	padding-bottom:0 !important;
 	min-height: 0 !important;
+}
+
+#mc-embedded-subscribe{
+	margin-top:10px !important;
 }
 
 /*---- FAQ ----*/
