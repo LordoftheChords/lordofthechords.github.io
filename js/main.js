@@ -17,10 +17,10 @@ $(document).ready(function() {
         $(this).find(".collapse-icon").text("+");
       }
     })
-    
+
     $('.navbar-nav>li>a').on('click', function(){
-      $('.navbar-collapse').collapse('hide');
-  });
+        $('#navbarNav').removeClass("show");
+    });
 
     timer();
 });
