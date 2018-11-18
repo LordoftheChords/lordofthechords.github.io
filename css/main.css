@@ -56,51 +56,8 @@ h1 {
 
 
 /*---- Menu ----*/
-
-.menu {
-	text-align:center;
-	padding-top:5px;
-	font-weight:400;
-}
-
-.menu li {
-	display:inline-block;
-	padding-left:16px;
-	padding-right:16px;
-}
-
-.menu li a {
-	font-size:16px;
-	text-transform:uppercase;
-	font-family: 'Rubik', sans-serif;
-	text-decoration:none;
-	color:white;
-	text-align:center;
-}
-
-.menu-link:hover{
-	font-weight: 500;
-}
-.scroll-menu {
-	padding:0;
-	display:inherit;
-	position:fixed;
-	width:100%;
-	z-index:1001;
-	height:50px;
-}
-
-.scroll-menu ul{
-	padding-top:25px;
-	padding-bottom: 13px;
-}
-
-.menu-icon {
-	position:relative;
-	top:12px;
-    margin-left:16px;
-    max-height: 2emp;
-	display:none;
+.menu-button{
+	display: contents;
 }
 
 /*---- Timer ----*/
@@ -139,12 +96,14 @@ h1 {
 	max-width:100%;
 	max-height:100%;
 }
+
+.kickstarter-logo{
+	margin-bottom: 15px;
+}
 /*---- Signup Form ----*/
 
 #mc_embed_signup_scroll { 
 	font-family: 'Rubik', sans-serif;
-	margin: 50px auto auto auto;
-	width:85%;
 }
 
 #mc_embed_signup .button:hover{
@@ -164,6 +123,7 @@ h1 {
 
 #mc-embedded-subscribe{
 	margin-top:10px !important;
+	font-size: large !important;
 }
 
 /*---- FAQ ----*/

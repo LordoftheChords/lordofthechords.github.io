@@ -31,9 +31,13 @@
         <div class="header-section">
             <div class="container">
                 <nav class="navbar navbar-expand-md fixed-top bg-dark" style="z-index:9;">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler menu-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="color-white fas fa-bars navbar-toggler-icon"></i>
-                        <span class="color-white">Lord of the Chords</span>
+                        <span class="nav-link color-white timer">
+                                <span id="kickstarter-timer"></span>
+                                <span id="kickstarter-timer-seconds"></span>
+                                TILL LAUNCH
+                        </span>>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav mr-auto">
@@ -62,7 +66,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm px-0" id="cover">
-                    <img class="img-fluid" src="images/cover-picture/amazing.png">
+                    <!-- <img class="img-fluid" src="images/cover-picture/amazing.png"> -->
+                    <!-- <img class="img-fluid" src="images/cover-picture/amazingWBG.png"> -->
+                    <picture>
+                        <source srcset="images/cover-picture/amazingWBG_desktop.png" type="image/png" media="(min-width: 40em)" />
+                        <source srcset="images/cover-picture/amazingWBG_mobile.png" type="image/png" />
+                        <img class="img-fluid" src="images/cover-picture/amazingWBG.png">
+                    </picture>   
                 </div>
             </div>
         </div>
@@ -74,11 +84,12 @@
                 <div class="col-md" style="z-index:8;" id="gustav">
                     <!-- <img class="main-center-img" src="images/main-center-img-06.png"> -->
                     <!--  Mailchimp Signup Form -->
-                    <div id="mc_embed_signup" class="align-center">
+                    <div id="mc_embed_signup">
                         <form action="https://lordofthechords.us19.list-manage.com/subscribe/post?u=6b7e4a798687d13a13ac848d5&amp;id=a7ac4d90f8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <div id="mc_embed_signup_scroll">
-                                <h5>GET UPDATES ON OUR <img class="img-fluid" src="images/kickstarter.png"> LAUNCH</h5>
-                                <div class="small">We will only send you harmonious hellos, major news, note-worthy updates and key developments.</div>
+                            <div id="mc_embed_signup_scroll" class="align-center">
+                                <h1 class="display-3">Subscribe!</h1>
+                                <h5>We will only send you harmonious hellos, major news, note-worthy updates and key developments on our</h5>
+                                <img class="img-fluid kickstarter-logo" src="images/kickstarter.png">
                                 <div class="mc-field-group">
                                     <input type="text" value="" name="FNAME" class="required name" id="mce-FNAME" placeholder = "Wolfgang Amadeus Mozart">
                                 </div>
