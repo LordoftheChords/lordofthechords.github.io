@@ -287,6 +287,7 @@ h1 {
 
 	.header-section {
 		text-align:center;
+		display: inline-flex;
 	}
 
 	.header-text {
@@ -351,8 +352,9 @@ h1 {
 
 @media screen and (max-width:550px) {
 
-	.header-section .row {
+	.header-section {
 		width:100%;
+		display: inline-flex;
 	}
 
 	h2 {

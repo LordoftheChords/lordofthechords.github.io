@@ -17,33 +17,14 @@ $(document).ready(function() {
         $(this).find(".collapse-icon").text("+");
       }
     })
+    
+    $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+  });
 
     timer();
 });
 
-
-
-
-// $(document).on('click', 'a[href^="#"]', function (event) {
-//     event.preventDefault();
-
-//     $('html, body').animate({
-//         scrollTop: $($.attr(this, 'href')).offset().top
-//     }, 500);
-// });
-
-// $('#main-menu-icon').on('click', function() {
-//   $('#main-menu').toggleClass("show");
-// });
-
-// $('#scroll-menu-icon').on('click', function() {
-//   $('#scroll-menu').toggleClass("show");
-// });
-
-// $('.menu-link').on('click', function() {
-//     $('#main-menu').removeClass("show");
-//     $('#scroll-menu').removeClass("show");
-// });
 
 function timer(){
   // Set the date we're counting down to
