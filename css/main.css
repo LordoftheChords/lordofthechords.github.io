@@ -32,6 +32,10 @@ h1 {
 	color:#fff;
 }
 
+.color-gold {
+	color: goldenrod;
+}
+
 .color-theme {
 	color:black;
 }
@@ -87,7 +91,7 @@ h1 {
 }
 
 .scroll-menu ul{
-	padding-top:13px;
+	padding-top:25px;
 	padding-bottom: 13px;
 }
 
@@ -293,62 +297,25 @@ h1 {
 		width:100%;
 	}
 
-	#speakers img {
-		margin-bottom:40px;
+	.hidden-menu{
+		display:none !important;
 	}
-
-	#partners img {
-		margin-bottom:40px;
-	}
-
-	button.tablink {
-		width:100%;
-	}
-
-	.timedesc {
-		width:85%;
-	}
-
-	#speakers .three.columns {
-		width:49.99%;
-		margin-bottom:30px;
-	}
-
-	#gold-sponsors {
-		margin-bottom:0px;
-	}
-
-	#silver-sponsors {
-		margin-bottom:0px;
-	}
-
-	#sponsors .container .columns  {
-		margin-bottom:30px;
-	}
-
-	#partners .container .columns  {
-		margin-bottom:30px;
-	}
-
 }
 
 @media screen and (max-width:705px) {
-
-	.timedesc {
-		width:82%;
-	}
 
 }
 
 @media screen and (max-width:657px) {
 
 	.menu-icon {
+		color: white !important;
 		display:inherit;
 		float:left;
 	}
 
 	.menu {
-		background:white;
+		background:black;
 		padding-top:0px;
 		margin-top:22px;
 		box-shadow:0px 4px 10px rgba(0,0,0,0.2);
@@ -367,20 +334,18 @@ h1 {
 	}
 
 	.menu li a {
-		color:#ED4545;
+		color:white;
 		line-height:50px;
 	}
 
 	.header-logo {
 		padding-top:50px;
 	}
+
 }
 
 @media screen and (max-width:560px) {
 
-	.timedesc {
-		width:77%;
-	}
 
 }
 

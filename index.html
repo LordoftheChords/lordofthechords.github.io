@@ -3,8 +3,6 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="css/normalize.css" />
-        <!-- <link type="text/css" rel="stylesheet" href="css/skeleton.css" /> -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
         <link type="text/css" rel="stylesheet" href="css/main.css" />
@@ -31,43 +29,43 @@
 
     <body>
         <div class="header-section">
-            <div class="section bkg-theme scroll-menu">
-                <div class="clear"></div>
-                <ul class="menu" id="scroll-menu">
-                    <li><a class="menu-link hvr-icon-grow" href="https://www.facebook.com/lordofthechords"><i class="fab fa-facebook hvr-icon"></i></a></li>
-                    <li><a class="menu-link hvr-icon-grow" href="https://www.instagram.com/lordofthechords"><i class="fab fa-instagram hvr-icon"></i></a></li>
-                    <li><a class="menu-link" href="#how-to-play">How to play</a></li>
-                    <!-- <li><a class="menu-link" href="#kickstarter">Kickstarter</a></li> -->
-                    <li><a class="menu-link" href="#events">Events</a></li>
-                    <li><a class="menu-link" href="#team">Team</a></li>
-                    <li><a class="menu-link" href="#faq">FAQ</a></li>
-                    <li class="color-white timer">
-                        <span id="kickstarter-timer"></span>
-                        <span id="kickstarter-timer-seconds"></span>
-                        TILL LAUNCH
-                    </li>
-                </ul>
+            <div class="container">
+                <nav class="navbar navbar-expand-md fixed-top bg-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="color-white navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav mr-auto">
+                                <li><a class="nav-link text-white" href="#cover"><i class="fas fa-crown"></i></a></li>
+                                <li><a class="nav-link text-white" href="#gustav">Gimme the Gustav</a></li>
+                                <li><a class="nav-link text-white" href="#how-to-play">How to play</a></li>
+                                <li><a class="nav-link text-white" href="#events">Events</a></li>
+                                <li><a class="nav-link text-white" href="#team">Team</a></li>
+                                <li><a class="nav-link text-white" href="#faq">FAQ</a></li>
+                            </ul>
+                        <div style="display:inline-flex">
+                            <!-- timer -->
+                            <div class="nav-link color-white timer hidden-menu">
+                                    <span id="kickstarter-timer"></span>
+                                    <span id="kickstarter-timer-seconds"></span>
+                                    TILL LAUNCH
+                            </div>>
+                            <a class="nav-link hidden-menu" href="https://www.facebook.com/lordofthechords"><i class="color-gold fab fa-facebook"></i></a>
+                            <a class="nav-link hidden-menu" href="https://www.instagram.com/lordofthechords"><i class="color-gold fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            <div class="clear"></div>
-            <ul class="menu" id="main-menu">
-                <li><a class="menu-link hvr-icon-grow" href="https://www.facebook.com/lordofthechords"><i class="fab fa-facebook hvr-icon"></i></a></li>
-                <li><a class="menu-link hvr-icon-grow" href="https://www.instagram.com/lordofthechords"><i class="fab fa-instagram hvr-icon"></i></a></li>
-                <li><a class="menu-link" href="#how-to-play">How to play</a></li>
-                <!-- <li><a class="menu-link" href="#kickstarter">Kickstarter</a></li> -->
-                <li><a class="menu-link" href="#events">Events</a></li>
-                <li><a class="menu-link" href="#team">Team</a></li>
-                <li><a class="menu-link" href="#faq">FAQ</a></li>
-            </ul>
         </div>
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm px-0">
+                <div class="col-sm px-0" id="cover">
                     <img class="img-fluid" src="images/cover-picture/Leading Picture.jpg">
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="gustav">
             <div class="row">
                 <div class="col-sm px-0">
                     <img class="main-left-img" src ="images/bae.png">
@@ -191,8 +189,9 @@
         </div>
         <!-- <script for MailChimp embed form-->
         <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
