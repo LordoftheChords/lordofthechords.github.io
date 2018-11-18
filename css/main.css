@@ -99,12 +99,13 @@ h1 {
 	display:none;
 }
 
-/*---- Header ----*/
+/*---- Timer ----*/
 
-.header-section {
-	
+#kickstarter-timer-seconds{
+	color: gold;
 }
 
+/*---- Header ----*/
 
 
 .p2 {
@@ -131,21 +132,19 @@ h1 {
 	max-height: 100%;
 }
 .main-right-img{
-	position: absolute;
-	z-index:1;
 	max-width:100%;
 	max-height:100%;
 }
 /*---- Signup Form ----*/
 
 #mc_embed_signup_scroll { 
-	font:14px Helvetica,Arial,sans-serif;
+	font-family: 'Rubik', sans-serif;
 	margin: 50px auto auto auto;
 	width:85%;
 }
 
 #mc_embed_signup .button:hover{
-	background: red !important;
+	background: goldenrod !important;
 }
 
 /* Signup Form Font */

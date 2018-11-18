@@ -81,8 +81,9 @@ function timer(){
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Display the result in the element with id="demo"
-    document.getElementById("kickstarter-timer").innerHTML = days + "d " + hours + "h "
-    + minutes + "m " + seconds + "s ";
+    document.getElementById("kickstarter-timer").textContent = days + "d " + hours + "h "
+    + minutes + "m ";
+    document.getElementById("kickstarter-timer-seconds").textContent = " " + seconds + "s "
 
     // If the count down is finished, write some text 
     if (distance < 0) {
