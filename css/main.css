@@ -166,6 +166,12 @@ h1 {
 	height:100px;
 }
 
+/*---- How to play ----*/
+.how-to-play-text{
+	padding-left:50px;
+	padding-right:50px;
+}
+
 /*---- FAQ ----*/
 
 #faq .container {
