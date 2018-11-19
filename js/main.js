@@ -45,15 +45,26 @@ function timer(){
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Display the result in the element with id="demo"
-    document.getElementById("kickstarter-timer").textContent = days + "d " + hours + "h "
-    + minutes + "m ";
-    document.getElementById("kickstarter-timer-seconds").textContent = " " + seconds + "s "
-
-    // If the count down is finished, write some text 
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("kickstarter-timer").innerHTML = "WE ARE LIVE HERE: [link]";
+    var viewport = $( window ).width();
+    //full menu
+    if (viewport > 768){
+      var ks_timer = 'kickstarter-timer';
+      var ks_timer_s = 'kickstarter-timer-seconds';
     }
+    //collapsible menu
+    else {
+      var ks_timer = 'kickstarter-timer-collapsible';
+      var ks_timer_s = 'kickstarter-timer-seconds-collapsible';
+    }
+        document.getElementById(ks_timer).textContent = days + "d " + hours + "h "
+        + minutes + "m ";
+        document.getElementById(ks_timer_s).textContent = " " + seconds + "s "
+
+      // If the count down is finished, write some text 
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById(ks_timer).innerHTML = "WE ARE LIVE HERE: ";
+        document.getElementById(ks_timer_s).innerHTML = "[link]";
+      }
   }, 1000);
 }

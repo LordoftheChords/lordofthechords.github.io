@@ -34,11 +34,11 @@
                 <nav class="navbar navbar-expand-md fixed-top bg-dark" style="z-index:9;">
                     <button class="navbar-toggler menu-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="color-white fas fa-bars navbar-toggler-icon"></i>
-                        <span class="nav-link color-white timer">
-                                <span id="kickstarter-timer"></span>
-                                <span id="kickstarter-timer-seconds"></span>
+                        <div class="nav-link color-white timer">
+                                <span id="kickstarter-timer-collapsible"></span>
+                                <span id="kickstarter-timer-seconds-collapsible"></span>
                                 TILL LAUNCH
-                        </span>
+                        </div>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                             <ul class="navbar-nav mr-auto">
@@ -88,7 +88,7 @@
                                 Subscribe
                                 <i class="fas fa-music"></i>
                             </span>
-                            <h5>We will only send you harmonious hellos, major news, note-worthy updates and key developments about our</h5>
+                            <h5 class="subscribe-desc">We will only send you harmonious hellos, major news, note-worthy updates and key developments about our</h5>
                             <img class="img-fluid kickstarter-logo" src="images/kickstarter.png">
                             <div class="mc-field-group">
                                 <input type="text" value="" name="FNAME" class="required name" id="mce-FNAME" placeholder = "Wolfgang Amadeus Mozart">
@@ -102,7 +102,7 @@
                             </div> 
                             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups -->
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6b7e4a798687d13a13ac848d5_a7ac4d90f8" tabindex="-1" value=""></div>
-                                <button class= "button hvr-buzz" type="submit" name="subscribe" id="mc-embedded-subscribe">
+                                <button class= "button hvr-buzz subscribe-button" type="submit" name="subscribe" id="mc-embedded-subscribe">
                                     <i class="fas fa-music"></i> Gimme the Gustav(Mahler)!
                         </div>
                     </form>
@@ -130,6 +130,7 @@
                         <br><br>
                         But wait, there’s more! Instead of playing note cards, you can play hilarious action cards full of musical puns to skip your friends’ turns by placing them “Under A Rest! ” with Rest Cards, deny your friends the win with “CHORD BLOCK” cards, or forcefully steal your friends’ action cards with “Gimme Debussy” Composer cards!
                     </p>
+                    <img class="img-fluid" src="images/debussy.png" style="width:100px">
             </div>
         </div>
 
