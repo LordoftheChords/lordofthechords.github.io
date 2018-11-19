@@ -1,3 +1,11 @@
+body {
+	overflow-x: hidden;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
 /*---- Layout ----*/
 
 .float-left {
@@ -87,6 +95,8 @@ h1 {
 	max-width: 100%;
 	max-height:100%;
 	min-height: 95%;
+	padding-left: 50px !important;
+	padding-right: 50px !important;
 }
 .main-left-img{
 	max-width: 100%;
@@ -124,6 +134,14 @@ h1 {
 #mc-embedded-subscribe{
 	margin-top:10px !important;
 	font-size: large !important;
+}
+
+.name{
+	font-size: x-large;
+}
+
+.email {
+	font-size: x-large;
 }
 
 /*---- FAQ ----*/
@@ -239,13 +257,6 @@ h1 {
 
 @media screen and (max-width:768px) {
 
-	.header-section .row {
-		padding-top:2rem;
-		padding-bottom:10rem;
-		width:80%;
-		margin:auto;
-	}
-
 	.header-section {
 		text-align:center;
 		display: inline-flex;
@@ -308,7 +319,6 @@ h1 {
 
 @media screen and (max-width:560px) {
 
-
 }
 
 @media screen and (max-width:550px) {
@@ -316,6 +326,7 @@ h1 {
 	.header-section {
 		width:100%;
 		display: inline-flex;
+		box-sizing: border-box;
 	}
 
 	h2 {
@@ -359,7 +370,24 @@ h1 {
 }
 
 @media screen and (max-width:465px) {
-
+	/* Main images*/
+	.main-center-img{
+		max-width: 100%;
+		max-height:100%;
+		min-height: 95%;
+	}
+	.main-left-img{
+		max-width: 100%;
+		max-height: 100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	.main-right-img{
+		max-width:100%;
+		max-height:100%;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
 }
 
 @media screen and (max-width:360px) {
