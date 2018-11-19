@@ -166,6 +166,11 @@ h1 {
 
 }
 
+/*---- Quotes ----*/
+.quotes-img{
+	height:100px;
+}
+
 /*---- FAQ ----*/
 
 #faq .container {
