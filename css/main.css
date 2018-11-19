@@ -327,7 +327,6 @@ h1 {
 	}
 
 	.section {
-		padding-bottom:0px;
 		background: black;
 	}
 
@@ -361,21 +360,9 @@ h1 {
 
 @media screen and (max-width:465px) {
 
-	.timedesc {
-		width:72%;
-	}
-
 }
 
 @media screen and (max-width:360px) {
-
-	.timedesc {
-		width:67%;
-	}
-
-	.timeline-bg {
-		height:140px;
-	}
 
 }
 
