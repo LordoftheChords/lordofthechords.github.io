@@ -98,21 +98,12 @@ h1 {
 }
 /* Main images*/
 .main-center-img{
-	/* desktop version TODO shift to left and make bigger */
 	background: rgba(255, 255, 255);
 	position: absolute;
 	top: 18%;
 	width: 25%;
 	right:8%;
 	border-radius: 25px;
-}
-.main-left-img{
-	max-width: 100%;
-	max-height: 100%;
-}
-.main-right-img{
-	max-width:100%;
-	max-height:100%;
 }
 
 /*---- Signup Form ----*/
@@ -160,10 +151,14 @@ h1 {
 	line-height: 1.4rem;
 }
 
+.kickstarter-logo{
+	width:100%;
+}
+
 .subscribe-button{
-	font-size: 3vh;
-	color: white;
+	font-size: 3vh !important;
 	font-weight: bold;
+	width:100% !important;
 }
 
 /*---- Quotes ----*/
@@ -303,6 +298,9 @@ h1 {
 }
 
 @media screen and (max-width:768px) {
+	#cover{
+		margin-bottom: -200px;
+	}
 	.main-center-img{
 		position: relative;
 		max-width: 100%;
@@ -335,10 +333,17 @@ h1 {
 		color: gold;
 	}
 
+	.kickstarter-logo{
+		width:20%;
+	}
+
 	.subscribe{
-		font-size:2.25rem;
 		font-family: 'Rubik', sans-serif;
 		color: goldenrod;
+	}
+
+	.subscribe-desc{
+		font-size: 1.8vh;
 	}
 
 	#mc-embedded-subscribe{
@@ -353,10 +358,15 @@ h1 {
 }
 
 @media screen and (max-width:705px) {
-
+	#cover{
+		margin-bottom: -185px;
+	}
 }
 
 @media screen and (max-width:657px) {
+	#cover{
+		margin-bottom: -170px;
+	}
 
 	.menu-icon {
 		color: white !important;
@@ -395,7 +405,12 @@ h1 {
 }
 
 @media screen and (max-width:560px) {
-
+	#cover{
+		margin-bottom: -140px;
+	}
+	.kickstarter-logo{
+		width:30%;
+	}
 }
 
 @media screen and (max-width:550px) {
@@ -473,9 +488,15 @@ h1 {
 		line-height: 26px !important;
 		width: 100% !important;
 	}
+	#cover{
+		margin-bottom: -110px;
+	}
 }
 
 @media screen and (max-width:360px) {
+	#cover{
+		margin-bottom: -100px;
+	}
 	#mc-embedded-subscribe{
 		font-size: small !important;
 	}
