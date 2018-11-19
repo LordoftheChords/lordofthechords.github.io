@@ -98,11 +98,12 @@ h1 {
 }
 /* Main images*/
 .main-center-img{
+	/* desktop version TODO shift to left and make bigger */
 	background: rgba(255, 255, 255);
 	position: absolute;
-	top: 15%;
-	width: 23%;
-	right:4%;
+	top: 18%;
+	width: 25%;
+	right:8%;
 	border-radius: 25px;
 }
 .main-left-img{
@@ -143,19 +144,19 @@ h1 {
 }
 
 .email {
-	font-size: x-small !important;
+	font-size: medium !important;
 	width: 100% !important;
 }
 
 .subscribe{
-	font-size:3.2vh;
+	font-size:4vh;
 	font-family: 'Rubik', sans-serif;
 	color: goldenrod;
 	font-weight: bold;
 }
 
 .subscribe-desc{
-	font-size: 2.7vh;
+	font-size: 3.2vh;
 	line-height: 1.4rem;
 }
 
@@ -163,7 +164,6 @@ h1 {
 	font-size: 3vh;
 	color: white;
 	font-weight: bold;
-
 }
 
 /*---- Quotes ----*/
@@ -263,6 +263,30 @@ h1 {
 }
 
 @media screen and (max-width:1024px) {
+	.subscribe{
+		font-size:3.2vh;
+	}
+
+	.email {
+		font-size: small !important;
+	}
+
+	.main-center-img{
+		background: rgba(255, 255, 255);
+		position: absolute;
+		top: 15%;
+		width: 23%;
+		right:4%;
+		border-radius: 25px;
+	}
+	
+	.subscribe-desc{
+		font-size: 2.7vh;
+	}
+	
+	.subscribe-button{
+		font-size: 3vh;
+	}
 
 	h1 {
 		font-size:40px;
