@@ -69,6 +69,9 @@ h1 {
 }
 
 /*---- Timer ----*/
+.timer{
+	font-size:small;
+}
 
 #kickstarter-timer-seconds{
 	color: gold;
@@ -133,15 +136,21 @@ h1 {
 
 #mc-embedded-subscribe{
 	margin-top:10px !important;
-	font-size: large !important;
+	font-size: x-large !important;
 }
 
 .name{
-	font-size: x-large;
+	font-size: medium;
 }
 
 .email {
-	font-size: x-large;
+	font-size: medium;
+}
+
+.subscribe{
+	font-size:2.25rem;
+	font-family: 'Rubik', sans-serif;
+	color: goldenrod;
 }
 
 /*---- FAQ ----*/
@@ -387,6 +396,11 @@ h1 {
 		max-height:100%;
 		padding-left: 0 !important;
 		padding-right: 0 !important;
+	}
+
+	#mc-embedded-subscribe{
+		margin-top:10px !important;
+		font-size: medium !important;
 	}
 }
 
