@@ -150,12 +150,12 @@ h1 {
 }
 
 .subscribe-button{
-	font-size: 2.5vh !important;
 	height: 10vh !important;
 	white-space: normal !important;
 	line-height: 26px !important;
 	background: black !important;
 	margin-top: 3vh !important;
+	width: 100% !important;
 }
 
 /*---- Quotes ----*/
@@ -271,9 +271,6 @@ h1 {
 		border-radius: 25px;
 	}
 	
-	.subscribe-button{
-		font-size: 3vh;
-	}
 
 	h1 {
 		font-size:40px;
@@ -334,7 +331,7 @@ h1 {
 
 	.subscribe-button{
 		font-size: large !important;
-		width: 100% !important;
+		width: 75% !important;
 	}
 }
 
@@ -381,6 +378,9 @@ h1 {
 
 	.header-logo {
 		padding-top:50px;
+	}
+	.subscribe-button{
+		width:100% !important;
 	}
 
 }
