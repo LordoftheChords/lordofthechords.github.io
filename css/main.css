@@ -127,38 +127,35 @@ h1 {
 	min-height: 0 !important;
 }
 
-#mc-embedded-subscribe{
-	white-space: normal !important;
-	line-height: 26px !important;
-	height: 100% !important;
-	background: black !important;
-}
-
-.email {
-	font-size: medium !important;
-	width: 100% !important;
-}
-
 .subscribe{
 	font-size:4vh;
 	font-family: 'Rubik', sans-serif;
-	color: goldenrod;
+	color: black;
 	font-weight: bold;
 }
 
 .subscribe-desc{
-	font-size: 3.2vh;
-	line-height: 1.4rem;
+	font-size: 1.8vh;
+}
+
+.email {
+	display: inline-flex !important;
+	font-size: small !important;
+	margin: 3vh 0 0 0 !important;
+	width: 60% !important;
 }
 
 .kickstarter-logo{
-	width:100%;
+	width:65%;
 }
 
 .subscribe-button{
-	font-size: 3vh !important;
-	font-weight: bold;
-	width:100% !important;
+	font-size: 2.5vh !important;
+	height: 10vh !important;
+	white-space: normal !important;
+	line-height: 26px !important;
+	background: black !important;
+	margin-top: 3vh !important;
 }
 
 /*---- Quotes ----*/
@@ -264,13 +261,6 @@ h1 {
 }
 
 @media screen and (max-width:1024px) {
-	.subscribe{
-		font-size:3.2vh;
-	}
-
-	.email {
-		font-size: small !important;
-	}
 
 	.main-center-img{
 		background: rgba(255, 255, 255);
@@ -279,10 +269,6 @@ h1 {
 		width: 23%;
 		right:4%;
 		border-radius: 25px;
-	}
-	
-	.subscribe-desc{
-		font-size: 2.7vh;
 	}
 	
 	.subscribe-button{
@@ -301,6 +287,9 @@ h1 {
 		font-size:16px;
 	}
 
+	.email{
+		font-size: x-small !important;
+	}
 }
 
 @media screen and (max-width:768px) {
@@ -343,22 +332,8 @@ h1 {
 		width:20%;
 	}
 
-	.subscribe{
-		font-family: 'Rubik', sans-serif;
-		color: goldenrod;
-	}
-
-	.subscribe-desc{
-		font-size: 1.8vh;
-	}
-
-	#mc-embedded-subscribe{
+	.subscribe-button{
 		font-size: large !important;
-		width: 100% !important;
-	}
-
-	.email {
-		font-size: medium !important;
 		width: 100% !important;
 	}
 }
@@ -487,8 +462,7 @@ h1 {
 		padding-right: 0 !important;
 	}
 
-	#mc-embedded-subscribe{
-		margin-top:10px !important;
+	.subscribe-button{
 		font-size: medium !important;
 		white-space: normal !important;
 		line-height: 26px !important;
@@ -503,7 +477,7 @@ h1 {
 	#cover{
 		margin-bottom: -100px;
 	}
-	#mc-embedded-subscribe{
+	.subscribe-button{
 		font-size: small !important;
 	}
 }
