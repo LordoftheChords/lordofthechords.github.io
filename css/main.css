@@ -62,7 +62,6 @@ h1 {
 	background:black;
 }
 
-
 /*---- Menu ----*/
 .navbar{
 	background: black;
@@ -97,7 +96,7 @@ h1 {
 	width:100%;
 }
 /* Main images*/
-.main-center-img{
+#gustav{
 	background: rgba(255, 255, 255);
 	position: absolute;
 	top: 18%;
@@ -116,7 +115,6 @@ h1 {
 	background: goldenrod !important;
 }
 
-/* Signup Form Font */
 #mc_embed_signup label{
 	color: black;
 	padding-bottom: 0;
@@ -145,6 +143,13 @@ h1 {
 	width: 60% !important;
 }
 
+.mce_inline_error{
+	margin:0 !important;
+	background: white !important;
+	color:red !important;
+	font-size: x-small !important;
+}
+
 .kickstarter-logo{
 	width:65%;
 }
@@ -164,9 +169,17 @@ h1 {
 }
 
 /*---- How to play ----*/
+
+.how-to-play{
+	background: white;
+	padding-top:20px;
+	padding-bottom:20px;
+}
 .how-to-play-text{
 	padding-left:50px;
 	padding-right:50px;
+	text-transform: uppercase;
+	font-size: x-large;
 }
 
 /*---- FAQ ----*/
@@ -262,7 +275,7 @@ h1 {
 
 @media screen and (max-width:1024px) {
 
-	.main-center-img{
+	#gustav{
 		background: rgba(255, 255, 255);
 		position: absolute;
 		top: 15%;
@@ -293,7 +306,7 @@ h1 {
 	#cover{
 		margin-bottom: -200px;
 	}
-	.main-center-img{
+	#gustav{
 		position: relative;
 		max-width: 100%;
 		max-height:100%;
@@ -444,7 +457,7 @@ h1 {
 
 @media screen and (max-width:465px) {
 	/* Main images*/
-	.main-center-img{
+	#gustav{
 		max-width: 100%;
 		max-height:100%;
 		min-height: 95%;
