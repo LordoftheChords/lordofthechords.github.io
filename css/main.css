@@ -42,6 +42,7 @@ h1 {
 
 .highlight {
 	color: #ffdb00;
+	text-shadow: 0px 1px 1px goldenrod;
 }
 
 .color-black {
@@ -170,15 +171,28 @@ h1 {
 
 /*---- How to play ----*/
 
+/* container */
+#how-to-play{
+	background: white;
+}
+
 .how-to-play{
 	background: white;
-	padding-top:20px;
-	padding-bottom:20px;
+	margin-top:20px;
+	margin-bottom:20px;
 }
-.how-to-play-text{
+.how-to-play-text-left{
+	color: black;
 	text-transform: uppercase;
 	font-size: x-large;
 }
+
+.how-to-play-text-right{
+	color: black;
+	text-transform: uppercase;
+	font-size: x-large;
+}
+
 
 /*---- FAQ ----*/
 
@@ -404,8 +418,29 @@ h1 {
 		width:30%;
 	}
 
-	.how-to-play-image{
-		width:50%;
+	.how-to-play-text-left{
+		padding-left: 15vw;
+		width: 50%;
+		font-size: small;
+	}
+
+	.how-to-play-image-right{
+		background: white;
+		width:25%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.how-to-play-text-right{
+		padding-right: 15vw;
+		width: 50%;
+		font-size: small;
+	}
+
+	.how-to-play-image-left{
+		background: white;
+		width:40%;
+		margin-left: auto;
 	}
 }
 
