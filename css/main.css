@@ -40,11 +40,11 @@ h1 {
 	color:#fff;
 }
 
-.color-gold {
-	color: goldenrod;
+.highlight {
+	color: #ffdb00;
 }
 
-.color-theme {
+.color-black {
 	color:black;
 }
 
@@ -176,8 +176,6 @@ h1 {
 	padding-bottom:20px;
 }
 .how-to-play-text{
-	padding-left:50px;
-	padding-right:50px;
 	text-transform: uppercase;
 	font-size: x-large;
 }
@@ -404,6 +402,10 @@ h1 {
 	}
 	.kickstarter-logo{
 		width:30%;
+	}
+
+	.how-to-play-image{
+		width:50%;
 	}
 }
 
