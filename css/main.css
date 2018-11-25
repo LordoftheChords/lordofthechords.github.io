@@ -125,7 +125,7 @@ h1 {
 	min-height: 0 !important;
 }
 
-.subscribe{
+.subscribe-title{
 	font-size:4vh;
 	font-family: 'Rubik', sans-serif;
 	color: black;
@@ -161,6 +161,7 @@ h1 {
 	background: black !important;
 	margin-top: 3vh !important;
 	width: 100% !important;
+	font-weight: bold;
 }
 
 /*---- Quotes ----*/
