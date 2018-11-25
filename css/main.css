@@ -27,7 +27,7 @@ h1 {
 }
 
 .p-main {
-	font-size:20px;
+	font-size:3vw;
 	line-height:40px;
 	opacity:0.8;
 }
@@ -43,6 +43,7 @@ h1 {
 .highlight {
 	color: #ffdb00;
 	text-shadow: 0px 1px goldenrod;
+	/* font-weight: 500; */
 }
 
 .color-gold{
@@ -115,6 +116,10 @@ h1 {
 	display:none;
 }
 
+.validate{
+	padding-bottom:0px !important;
+}
+
 #mc_embed_signup_scroll { 
 	font-family: 'Rubik', sans-serif;
 }
@@ -134,7 +139,7 @@ h1 {
 }
 
 .subscribe-title{
-	font-size:4vh;
+	font-size:3.5vh;
 	font-family: 'Rubik', sans-serif;
 	color: black;
 	font-weight: bold;
@@ -159,17 +164,20 @@ h1 {
 }
 
 .kickstarter-logo{
-	width:65%;
+	width:auto;
+	height:1.8vh;
 }
 
 .subscribe-button{
 	height: 10vh !important;
 	white-space: normal !important;
 	line-height: 26px !important;
-	background: black !important;
+	background: #ffdb00 !important;
 	margin-top: 3vh !important;
 	width: 100% !important;
 	font-weight: bold;
+	color: black !important;
+	font-size: 3.5vh !important;
 }
 
 /*---- Quotes ----*/
@@ -180,14 +188,13 @@ h1 {
 /*---- How to play ----*/
 
 /* container */
-#how-to-play{
-	background: white;
+.gradient-bg{
+	background-image: linear-gradient(to right, #d4d4d460, rgb(255, 255, 255), rgb(255, 255, 255), #d4d4d460);
 }
 
 .how-to-play{
-	background: white;
+	background: transparent;
 	margin-top:20px;
-	margin-bottom:20px;
 }
 .how-to-play-text-left{
 	color: black;
@@ -233,6 +240,7 @@ h1 {
 .faqAnswer{
 	display: none;
 	font-family: 'Rubik', sans-serif;
+	font-size: 13px;
 }
 
 
@@ -368,17 +376,14 @@ h1 {
 		color: gold;
 	}
 
-	.kickstarter-logo{
-		width:20%;
-	}
-
 	.subscribe-button{
-		font-size: large !important;
+		font-size: 5.5vw !important;
 		width: 75% !important;
 	}
 
 	.email{
 		width: 58% !important;
+		font-size: 3.2vw !important;
 	}
 
 	.subscribe-title{
@@ -440,9 +445,6 @@ h1 {
 	#cover{
 		margin-bottom: -140px;
 	}
-	.kickstarter-logo{
-		width:30%;
-	}
 
 	.how-to-play-text-left{
 		padding-left: 15vw;
@@ -450,7 +452,7 @@ h1 {
 	}
 
 	.how-to-play-image-right{
-		background: white;
+		background: transparent;
 		width:35%;
 		/* margin-right: auto;
 		margin-left: auto; */
@@ -462,13 +464,13 @@ h1 {
 	}
 
 	.how-to-play-image-left{
-		background: white;
+		background: transparent;
 		width:40%;
 		margin-left: auto;
 	}
 
 	.how-to-play-text-center{
-		background: white;
+		background: transparent;
 		width:80%;
 		margin-left: auto;
 		margin-right: auto;
@@ -543,7 +545,6 @@ h1 {
 	}
 
 	.subscribe-button{
-		font-size: medium !important;
 		white-space: normal !important;
 		line-height: 26px !important;
 		width: 100% !important;
