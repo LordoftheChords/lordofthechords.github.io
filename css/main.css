@@ -438,8 +438,8 @@ h1 {
 	.how-to-play-image-right{
 		background: white;
 		width:35%;
-		margin-right: auto;
-		margin-left: auto;
+		/* margin-right: auto;
+		margin-left: auto; */
 	}
 
 	.how-to-play-text-right{
