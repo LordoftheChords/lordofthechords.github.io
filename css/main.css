@@ -42,7 +42,11 @@ h1 {
 
 .highlight {
 	color: #ffdb00;
-	text-shadow: 0px 1px 1px goldenrod;
+	text-shadow: 0px 1px goldenrod;
+}
+
+.color-gold{
+	color: #ffdb00;
 }
 
 .color-black {
@@ -97,7 +101,7 @@ h1 {
 	width:100%;
 }
 /* Main images*/
-#gustav{
+#debussy{
 	background: rgba(255, 255, 255);
 	position: absolute;
 	top: 18%;
@@ -188,6 +192,12 @@ h1 {
 }
 
 .how-to-play-text-right{
+	color: black;
+	text-transform: uppercase;
+	font-size: x-large;
+}
+
+.how-to-play-text-center{
 	color: black;
 	text-transform: uppercase;
 	font-size: x-large;
@@ -287,7 +297,7 @@ h1 {
 
 @media screen and (max-width:1024px) {
 
-	#gustav{
+	#debussy{
 		background: rgba(255, 255, 255);
 		position: absolute;
 		top: 15%;
@@ -318,7 +328,7 @@ h1 {
 	#cover{
 		margin-bottom: -200px;
 	}
-	#gustav{
+	#debussy{
 		position: relative;
 		max-width: 100%;
 		max-height:100%;
@@ -442,6 +452,19 @@ h1 {
 		width:40%;
 		margin-left: auto;
 	}
+
+	.how-to-play-text-center{
+		background: white;
+		width:80%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: small;
+	}
+
+	.team-members{
+		/* width:25%; */
+		width: 33%;
+	}
 }
 
 @media screen and (max-width:550px) {
@@ -494,7 +517,7 @@ h1 {
 
 @media screen and (max-width:465px) {
 	/* Main images*/
-	#gustav{
+	#debussy{
 		max-width: 100%;
 		max-height:100%;
 		min-height: 95%;
