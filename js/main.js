@@ -22,7 +22,10 @@ $(document).ready(function() {
         $('#navbarNav').removeClass("show");
     });
 
+
     timer();
+
+
 });
 
 
