@@ -27,9 +27,7 @@ h1 {
 }
 
 .p-main {
-	font-size:3vw;
-	line-height:40px;
-	opacity:0.8;
+	font-size:5vw;
 }
 
 .align-center {
@@ -334,6 +332,7 @@ h1 {
 	.email{
 		font-size: x-small !important;
 	}
+
 }
 
 @media screen and (max-width:768px) {
@@ -491,10 +490,6 @@ h1 {
 
 	h2 {
 		font-size:28px;
-	}
-
-	.p-main {
-		font-size:3vw;
 	}
 
 	.section {
