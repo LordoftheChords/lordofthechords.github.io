@@ -62,8 +62,8 @@ h1 {
 }
 
 .section {
-	padding-top:80px;
-	padding-bottom:40px;
+	padding-top:2vh;
+	padding-bottom:1vh;
 	background:black;
 }
 
@@ -189,19 +189,19 @@ h1 {
 .how-to-play-text-left{
 	color: black;
 	text-transform: uppercase;
-	font-size: x-large;
+	font-size: 2.5vw;
 }
 
 .how-to-play-text-right{
 	color: black;
 	text-transform: uppercase;
-	font-size: x-large;
+	font-size: 2.5vw;
 }
 
 .how-to-play-text-center{
 	color: black;
 	text-transform: uppercase;
-	font-size: x-large;
+	font-size: 2.5vw;
 }
 
 
@@ -425,7 +425,7 @@ h1 {
 
 }
 
-@media screen and (max-width:560px) {
+@media screen and (max-width:575px) {
 	#cover{
 		margin-bottom: -140px;
 	}
@@ -436,7 +436,6 @@ h1 {
 	.how-to-play-text-left{
 		padding-left: 15vw;
 		width: 50%;
-		font-size: small;
 	}
 
 	.how-to-play-image-right{
@@ -449,7 +448,6 @@ h1 {
 	.how-to-play-text-right{
 		padding-right: 15vw;
 		width: 50%;
-		font-size: small;
 	}
 
 	.how-to-play-image-left{
@@ -463,7 +461,6 @@ h1 {
 		width:80%;
 		margin-left: auto;
 		margin-right: auto;
-		font-size: small;
 	}
 
 	.team-members{
@@ -484,7 +481,7 @@ h1 {
 	}
 
 	.p-main {
-		font-size:17px;
+		font-size:3vw;
 	}
 
 	.section {
