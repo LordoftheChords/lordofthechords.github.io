@@ -40,11 +40,16 @@ h1 {
 	color:#fff;
 }
 
-.color-gold {
-	color: goldenrod;
+.highlight {
+	color: #ffdb00;
+	text-shadow: 0px 1px goldenrod;
 }
 
-.color-theme {
+.color-gold{
+	color: #ffdb00;
+}
+
+.color-black {
 	color:black;
 }
 
@@ -96,7 +101,7 @@ h1 {
 	width:100%;
 }
 /* Main images*/
-#gustav{
+#debussy{
 	background: rgba(255, 255, 255);
 	position: absolute;
 	top: 18%;
@@ -171,17 +176,34 @@ h1 {
 
 /*---- How to play ----*/
 
+/* container */
+#how-to-play{
+	background: white;
+}
+
 .how-to-play{
 	background: white;
-	padding-top:20px;
-	padding-bottom:20px;
+	margin-top:20px;
+	margin-bottom:20px;
 }
-.how-to-play-text{
-	padding-left:50px;
-	padding-right:50px;
+.how-to-play-text-left{
+	color: black;
 	text-transform: uppercase;
 	font-size: x-large;
 }
+
+.how-to-play-text-right{
+	color: black;
+	text-transform: uppercase;
+	font-size: x-large;
+}
+
+.how-to-play-text-center{
+	color: black;
+	text-transform: uppercase;
+	font-size: x-large;
+}
+
 
 /*---- FAQ ----*/
 
@@ -276,7 +298,7 @@ h1 {
 
 @media screen and (max-width:1024px) {
 
-	#gustav{
+	#debussy{
 		background: rgba(255, 255, 255);
 		position: absolute;
 		top: 15%;
@@ -307,7 +329,7 @@ h1 {
 	#cover{
 		margin-bottom: -200px;
 	}
-	#gustav{
+	#debussy{
 		position: relative;
 		max-width: 100%;
 		max-height:100%;
@@ -406,6 +428,43 @@ h1 {
 	.kickstarter-logo{
 		width:30%;
 	}
+
+	.how-to-play-text-left{
+		padding-left: 15vw;
+		width: 50%;
+		font-size: small;
+	}
+
+	.how-to-play-image-right{
+		background: white;
+		width:25%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.how-to-play-text-right{
+		padding-right: 15vw;
+		width: 50%;
+		font-size: small;
+	}
+
+	.how-to-play-image-left{
+		background: white;
+		width:40%;
+		margin-left: auto;
+	}
+
+	.how-to-play-text-center{
+		background: white;
+		width:80%;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: small;
+	}
+
+	.team-members{
+		width: 33%;
+	}
 }
 
 @media screen and (max-width:550px) {
@@ -458,7 +517,7 @@ h1 {
 
 @media screen and (max-width:465px) {
 	/* Main images*/
-	#gustav{
+	#debussy{
 		max-width: 100%;
 		max-height:100%;
 		min-height: 95%;
