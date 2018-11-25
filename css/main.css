@@ -41,7 +41,7 @@ h1 {
 .highlight {
 	color: #ffdb00;
 	text-shadow: 0px 1px goldenrod;
-	/* font-weight: 500; */
+	font-weight: 500;
 }
 
 .color-gold{
