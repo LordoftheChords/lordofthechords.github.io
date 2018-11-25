@@ -145,7 +145,7 @@ h1 {
 	display: inline-flex !important;
 	font-size: small !important;
 	margin: 3vh 0 0 0 !important;
-	width: 60% !important;
+	width: 100% !important;
 }
 
 .mce_inline_error{
@@ -368,6 +368,10 @@ h1 {
 	.subscribe-button{
 		font-size: large !important;
 		width: 75% !important;
+	}
+
+	.email{
+		width: 58% !important;
 	}
 }
 
