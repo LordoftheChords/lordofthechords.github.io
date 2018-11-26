@@ -123,7 +123,8 @@ h1 {
 }
 
 #mc_embed_signup .button:hover{
-	background: goldenrod !important;
+	background: black !important;
+	color: #ffdb00 !important;
 }
 
 #mc_embed_signup label{
@@ -229,14 +230,14 @@ h1 {
 .faq-collapsible h3 {
 	padding: 15px 20px;
 }
-.faq-collapsible:hover{
+/* .faq-collapsible:hover{
 	cursor: pointer;
 	background-color:darkgray;
-	
-}
+} */
 
 .faqAnswer{
-	display: none;
+	/* display: none; */
+	padding-left:30px;
 	font-family: 'Rubik', sans-serif;
 	font-size: 13px;
 }

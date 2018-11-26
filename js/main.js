@@ -2,21 +2,21 @@ $(document).ready(function() {
 
     //Background animate
     
-    $(".faqAnswer").css("display","none");
+    // $(".faqAnswer").css("display","none");
     
     $("body").scroll(function (e) {
         $("body").scrollLeft(0);    
     });
     
 
-    $(".faq-collapsible").click(function(){
-      $(this.parentNode).find(".faqAnswer").toggle();
-      if($(this.parentNode).find(".faqAnswer").is(":visible")){
-        $(this).find(".collapse-icon").text("-");
-      }else{
-        $(this).find(".collapse-icon").text("+");
-      }
-    })
+    // $(".faq-collapsible").click(function(){
+    //   $(this.parentNode).find(".faqAnswer").toggle();
+    //   if($(this.parentNode).find(".faqAnswer").is(":visible")){
+    //     $(this).find(".collapse-icon").text("-");
+    //   }else{
+    //     $(this).find(".collapse-icon").text("+");
+    //   }
+    // })
 
     $('.navbar-nav>li>a').on('click', function(){
         $('#navbarNav').removeClass("show");
