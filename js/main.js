@@ -1,3 +1,7 @@
+var myLazyLoad = new LazyLoad({
+  elements_selector: ".lazy"
+});
+
 $(document).ready(function() {
 
     //Background animate
@@ -21,7 +25,6 @@ $(document).ready(function() {
     $('.navbar-nav>li>a').on('click', function(){
         $('#navbarNav').removeClass("show");
     });
-
 
     timer();
 

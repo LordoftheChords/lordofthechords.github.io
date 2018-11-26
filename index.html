@@ -25,6 +25,8 @@
 
             gtag('config', 'UA-129405868-1');
         </script>
+        <!-- lazyload images -->
+        <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@8.17.0/dist/lazyload.min.js"></script>
 
     </head>
 
@@ -67,12 +69,10 @@
         <div class="container-fluid px-0"  id="cover">
             <div class="row">
                 <div class="col-sm px-0">
-                    <!-- <img class="img-fluid" src="images/cover-picture/amazing.png"> -->
-                    <!-- <img class="img-fluid" src="images/cover-picture/amazingWBG.png"> -->
                     <picture>
                         <source srcset="images/cover-picture/amazingWBG_desktop.png" type="image/png" media="(min-width: 768px)" />
                         <source srcset="images/cover-picture/landing_mobile.png" type="image/png" />
-                        <img class="img-fluid" src="images/cover-picture/amazingWBG.png">
+                        <img class="img-fluid lazy" src="images/cover-picture/amazingWBG.png">
                     </picture>   
                 </div>
             </div>
@@ -109,7 +109,7 @@
                     <!-- End mc_embed_signup -->
                     <div class="subscribe-desc align-center">
                         We will only send you harmonious hellos, major news, note-worthy updates and key developments about our
-                        <img class="img-fluid kickstarter-logo" src="images/kickstarter-new-logo.png">
+                        <img class="img-fluid kickstarter-logo lazy" src="images/kickstarter-new-logo.png">
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -127,13 +127,13 @@
                     The game starts with a Key Signature card that indicates which <span class="highlight">notes</span> can be played and what <span class="highlight">chords</span> can be formed. <br><br>Play notes from your hand to form chords!
                 </div>
                 <div class="col-sm-3 how-to-play-image-right">
-                    <img class="img-fluid" src="images/how-to-play/amajor.png">
+                    <img class="img-fluid lazy" src="images/how-to-play/amajor.png">
                 </div>                        
             </div>
 
             <div class="how-to-play row align-items-center">                  
                 <div class="col-sm-5 offset-sm-1 how-to-play-image-left">
-                    <img class="img-fluid" src="images/how-to-play/amajorchord.png">
+                    <img class="img-fluid lazy" src="images/how-to-play/amajorchord.png">
                 </div>
                 <div class="col-sm-5 how-to-play-text-right text-left">
                     You get to <span class="highlight">change the Key Signature</span> when you form a chord. Notes not in key will be discarded so <s>beethoven</s> <span class="highlight">be strategic</span> about Key changes!
@@ -155,13 +155,13 @@
                     ... and much, much more!
                 </div>                        
                 <div class="col-sm-4 px-0 how-to-play-image-right">
-                    <img class="img-fluid" src="images/how-to-play/actions.png">
+                    <img class="img-fluid lazy" src="images/how-to-play/actions.png">
                 </div>
             </div>
                 
             <div class="how-to-play row align-items-center">
                 <div class="col-sm-5 offset-sm-1 how-to-play-image-left">
-                    <img class="img-fluid" src="images/how-to-play/theory.png">
+                    <img class="img-fluid lazy" src="images/how-to-play/theory.png">
                 </div>
                 <div class="col-sm-5 how-to-play-text-right text-left">
                     The musical-ness never ends! 
@@ -186,8 +186,72 @@
             </p>
         </div>
         <div class="gradient-bg">
-            <div class="text-center">
-                Under Review
+            <div class="card-columns">
+                <div class="card">
+                    <img class="card-img-top" src="images/social-proof/arnie-ben.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0 p-0 card-body">
+                            <p>SEPHIROTH!!!</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                Arnie Roth and Benyamin Nuss, <cite>Conductor and acclaimed pianist soloist for Final Fantasy: A New World</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/social-proof/jordan-rudess.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0 p-0 card-body">
+                            <p>I'm definitely backing this.</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                Jordan Rudess, <cite>Keyboardist of platinum-selling, Grammy-nominated progressive rock band Dream Theatre</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/social-proof/joo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0 p-0 card-body">
+                            <p>This is incredible!! </p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                Hyung-ki Joo, <cite title="Source Title">IGUDESMAN AND JOO</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/social-proof/igudesman.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0 p-0 card-body">
+                            <p>Perfect Man! </p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                        Aleksey Igudesman, <cite title="Source Title">IGUDESMAN AND JOO</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="images/social-proof/music-majors.JPG" alt="Card image cap">
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0 p-0 card-body">
+                            <p>The puns are killing me!</p>
+                            <footer class="blockquote-footer">
+                                <small class="text-muted">
+                                Rachel and Weiken, <cite title="Source Title">Music majors from Yong Siew Toh</cite>
+                                </small>
+                            </footer>
+                        </blockquote>
+                    </div>
+                </div>
             </div>
         </div> 
 
@@ -198,19 +262,17 @@
                 </p>
             </div>
         </div>
-            <div class="row justify-content-sm-center px-3">
-                <div class="col-sm-3 team-members">
-                    <img class="img-fluid" src="images/team/keith.png">
-                </div>
-                <div class="col-sm-3 team-members">
-                    <img class="img-fluid" src="images/team/jon.png">
-                </div>
-                <div class="col-sm-3 team-members">
-                    <img class="img-fluid" src="images/team/junyu.png">
-                </div>
+        <div class="row justify-content-sm-center px-3">
+            <div class="col-sm-3 team-members">
+                <img class="img-fluid lazy" src="images/team/keith.png">
             </div>
-        </div>    
-
+            <div class="col-sm-3 team-members">
+                <img class="img-fluid lazy" src="images/team/jon.png">
+            </div>
+            <div class="col-sm-3 team-members">
+                <img class="img-fluid lazy" src="images/team/junyu.png">
+            </div>
+        </div>
         <div class="section color-white px-0" id="faq">
             <style>
                 @media only screen and (max-width: 750px) {
