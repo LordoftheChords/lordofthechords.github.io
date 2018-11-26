@@ -188,7 +188,12 @@ h1 {
 
 /* container */
 .gradient-bg{
-	background-image: linear-gradient(to right, #d4d4d460, rgb(255, 255, 255), rgb(255, 255, 255), #d4d4d460);
+	background-image: linear-gradient(to right, 
+							#cdcccc60,
+							rgb(255, 255, 255), 
+							rgb(255, 255, 255), 
+							#cdcccc60
+						);
 }
 
 .how-to-play{
