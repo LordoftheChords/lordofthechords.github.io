@@ -1,11 +1,9 @@
+// initialize an instance of lazyload
 var myLazyLoad = new LazyLoad({
   elements_selector: ".lazy"
 });
 
-$(document).ready(function() {
-
-    //Background animate
-    
+$(document).ready(function() {    
     // $(".faqAnswer").css("display","none");
     
     $("body").scroll(function (e) {
@@ -28,7 +26,11 @@ $(document).ready(function() {
 
     timer();
 
-
+    // facebook pixel tracking function
+    $('#mc-embedded-subscribe-form').submit(function(e){
+        fbq('track', 'Lead');
+        console.log("lead tracked");
+    });
 });
 
 
