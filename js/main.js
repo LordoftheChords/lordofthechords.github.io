@@ -29,7 +29,7 @@ $(document).ready(function() {
     // facebook pixel tracking function
     $('#mc-embedded-subscribe-form').submit(function(e){
         fbq('track', 'Lead');
-        console.log("lead tracked");
+        gtag_report_conversion();
     });
 });
 
@@ -76,3 +76,21 @@ function timer(){
       }
   }, 1000);
 }
+
+
+
+
+// Event snippet for Lead Generation conversion page
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-777186400/xDfyCP7iqZABEODYy_IC',
+      'event_callback': callback
+  });
+  return false;
+}
+
