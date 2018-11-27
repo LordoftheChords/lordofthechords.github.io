@@ -37,7 +37,7 @@ $(document).ready(function() {
               fbq('track', 'Lead');
               gtag_report_conversion();
             }
-         })
+         });
     });
 });
 
