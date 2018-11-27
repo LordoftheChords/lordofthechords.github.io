@@ -27,17 +27,24 @@ $(document).ready(function() {
     timer();
 
     // leadgen tracking
-    $('#mc-embedded-subscribe-form').submit(function(e){
+    var $form = $('#mc-embedded-subscribe-form')
+    $form.submit(function(e){
         $.ajax({
-          type: "POST",
-           url: "https://lordofthechords.us19.list-manage.com/subscribe/post?u=6b7e4a798687d13a13ac848d5&amp;id=a7ac4d90f8",
-           data: $(this).serialize(),
-           success: function() {
-              // if form is submitted successfully, send notification to fbPixel and GoogleAnalytics
-              fbq('track', 'Lead');
-              gtag_report_conversion();
-            }
-         });
+          type: $form.attr('method'),
+          url: $form.attr('action'),
+          data: $form.serialize(),
+          cache       : false,
+          dataType    : 'json',
+          contentType: "application/json; charset=utf-8",
+          error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
+          success     : function(data) {
+              if (data.result == "success"){
+                // if form is submitted successfully, send notification to fbPixel and GoogleAnalytics
+                fbq('track', 'Lead');
+                gtag_report_conversion();
+              }
+          }
+      });
     });
 });
 
