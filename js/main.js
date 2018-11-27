@@ -26,10 +26,18 @@ $(document).ready(function() {
 
     timer();
 
-    // facebook pixel tracking function
+    // leadgen tracking
     $('#mc-embedded-subscribe-form').submit(function(e){
-        fbq('track', 'Lead');
-        gtag_report_conversion();
+        $.ajax({
+          type: "POST",
+           url: "https://lordofthechords.us19.list-manage.com/subscribe/post?u=6b7e4a798687d13a13ac848d5&amp;id=a7ac4d90f8",
+           data: $(this).serialize(),
+           success: function() {
+              // if form is submitted successfully, send notification to fbPixel and GoogleAnalytics
+              fbq('track', 'Lead');
+              gtag_report_conversion();
+            }
+         })
     });
 });
 
