@@ -27,6 +27,8 @@ $(document).ready(function() {
     timer();
     
     // leadGen tracking
+    // initialize ga instance
+    ga('create', 'UA-129405868-1', 'auto');
     // work in progress
     $('#mc-embedded-subscribe-form').submit(function(e){
       // 
@@ -34,8 +36,14 @@ $(document).ready(function() {
       if (!$('.mce_inline_error').is(':visible')){
         // fbpixel
         fbq('track', 'Lead');
-        // google analytics
+        // google Adwords
         gtag_report_conversion();
+        ga('send', {
+          hitType: 'event',
+          eventCategory: 'LeadGen',
+          eventAction: 'sign up',
+          eventLabel: 'Pre-KS-Campaign'
+        });
       }
       
     })
@@ -89,7 +97,7 @@ function timer(){
 
 
 
-// Event snippet for Lead Generation conversion page
+// Conversion for Google Adwords
 function gtag_report_conversion(url) {
   var callback = function () {
     if (typeof(url) != 'undefined') {
