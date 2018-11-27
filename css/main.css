@@ -275,14 +275,12 @@ h1 {
 	text-transform:uppercase;
 	font-family: 'Rubik', sans-serif;
 	text-decoration:none;
-	color:white;
 	text-align:center;
 	left:16px;
 
 }
 
 .footer a:hover {
-	color:white;
 }
 
 .footer-left {
