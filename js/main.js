@@ -25,27 +25,21 @@ $(document).ready(function() {
     });
 
     timer();
-
-    // leadgen tracking
-    var $form = $('#mc-embedded-subscribe-form')
-    $form.submit(function(e){
-        $.ajax({
-          type: $form.attr('method'),
-          url: $form.attr('action'),
-          data: $form.serialize(),
-          cache       : false,
-          dataType    : 'json',
-          contentType: "application/json; charset=utf-8",
-          error       : function(err) { alert("Could not connect to the registration server. Please try again later."); },
-          success     : function(data) {
-              if (data.result == "success"){
-                // if form is submitted successfully, send notification to fbPixel and GoogleAnalytics
-                fbq('track', 'Lead');
-                gtag_report_conversion();
-              }
-          }
-      });
-    });
+    
+    // leadGen tracking
+    // work in progress
+    $('#mc-embedded-subscribe-form').submit(function(e){
+      // 
+      // if user submits the same email it will still count
+      if (!$('.mce_inline_error').is(':visible')){
+        // fbpixel
+        fbq('track', 'Lead');
+        // google analytics
+        gtag_report_conversion();
+      }
+      
+    })
+    
 });
 
 
