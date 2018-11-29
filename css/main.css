@@ -4,8 +4,14 @@ body {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 			box-sizing: border-box;
+	font-family: Futura,"Trebuchet MS",Arial,sans-serif; 
 }
 
+/*---- Fonts ----*/
+/* @font-face {
+    font-family: myFirstFont;
+    src: url(sansation_light.woff);
+} */
 /*---- Layout ----*/
 
 .float-left {
@@ -119,7 +125,6 @@ h1 {
 }
 
 #mc_embed_signup_scroll { 
-	font-family: 'Rubik', sans-serif;
 }
 
 #mc_embed_signup .button:hover{
@@ -139,7 +144,6 @@ h1 {
 
 .subscribe-title{
 	font-size:3.5vh;
-	font-family: 'Rubik', sans-serif;
 	color: black;
 	font-weight: bold;
 }
@@ -243,7 +247,6 @@ h1 {
 .faqAnswer{
 	/* display: none; */
 	padding-left:30px;
-	font-family: 'Rubik', sans-serif;
 	font-size: 13px;
 }
 
