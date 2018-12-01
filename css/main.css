@@ -4,14 +4,16 @@ body {
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
 			box-sizing: border-box;
-	font-family: Futura,"Trebuchet MS",Arial,sans-serif; 
+	font-family: "Futura Md BT Medium", "Rubik", Arial, sans-serif;; 
 }
 
 /*---- Fonts ----*/
-/* @font-face {
-    font-family: myFirstFont;
-    src: url(sansation_light.woff);
-} */
+@font-face {
+	font-family: 'Futura Md BT Medium';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Futura Md BT Medium'), url('fonts/futura_medium_bt-webfont.woff') format('woff');
+}
 /*---- Layout ----*/
 
 .float-left {
@@ -150,6 +152,7 @@ h1 {
 
 .subscribe-desc{
 	font-size: 1.8vh;
+	font-weight: bold;
 }
 
 .email {
@@ -202,6 +205,7 @@ h1 {
 .how-to-play{
 	background: transparent;
 	margin-top:20px;
+	font-weight: bold;
 }
 .how-to-play-text-left{
 	color: black;
