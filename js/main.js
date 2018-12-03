@@ -38,6 +38,7 @@ $(document).ready(function() {
         fbq('track', 'Lead');
         // google Adwords
         gtag_report_conversion();
+        //google analytics
         ga('send', {
           hitType: 'event',
           eventCategory: 'LeadGen',
