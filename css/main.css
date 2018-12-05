@@ -75,6 +75,10 @@ h1 {
 }
 
 /*---- Menu ----*/
+.nav-link{
+	font-size:small;
+}
+
 .navbar{
 	background: black;
 }
@@ -261,9 +265,6 @@ h1 {
 
 .footer {
 	background:white;
-	padding-bottom:2px;
-	height:60px;
-	padding-top:20px;
 }
 
 .footer .container {
@@ -274,19 +275,13 @@ h1 {
 	width:100px;
 }
 
-.footer a {
-	position:relative;
+.footer-content {
 	bottom:14px;
 	font-size:16px;
 	text-transform:uppercase;
-	font-family: 'Rubik', sans-serif;
 	text-decoration:none;
 	text-align:center;
 	left:16px;
-
-}
-
-.footer a:hover {
 }
 
 .footer-left {
