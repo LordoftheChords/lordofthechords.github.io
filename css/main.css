@@ -47,9 +47,12 @@ h1 {
 }
 
 .highlight {
-	color: #ffdb00;
-	text-shadow: 0px 1px goldenrod;
-	font-weight: 500;
+	color: #ff2818;
+}
+
+.emphasis {
+	font-style: italic;
+	text-decoration: underline;
 }
 
 .color-gold{
@@ -161,9 +164,10 @@ h1 {
 
 .email {
 	display: inline-flex !important;
-	font-size: small !important;
+	font-size: large !important;
 	margin: 3vh 0 0 0 !important;
 	width: 100% !important;
+	min-height:40px !important;
 }
 
 .mce_inline_error{
@@ -187,6 +191,7 @@ h1 {
 	font-weight: bold;
 	color: black !important;
 	font-size: 3.5vh !important;
+	box-shadow: 4px 3px 5px 0px grey !important;
 }
 
 /*---- Quotes ----*/
@@ -335,10 +340,6 @@ h1 {
 		font-size:16px;
 	}
 
-	.email{
-		font-size: x-small !important;
-	}
-
 }
 
 @media screen and (max-width:768px) {
@@ -387,8 +388,7 @@ h1 {
 	}
 
 	.email{
-		width: 58% !important;
-		font-size: 3.2vw !important;
+		width: 75% !important;
 	}
 
 	.subscribe-title{
@@ -441,6 +441,9 @@ h1 {
 		padding-top:50px;
 	}
 	.subscribe-button{
+		width:100% !important;
+	}
+	.email{
 		width:100% !important;
 	}
 
@@ -549,6 +552,9 @@ h1 {
 		white-space: normal !important;
 		line-height: 26px !important;
 		width: 100% !important;
+	}
+	.email {
+		width:100% !important;
 	}
 	#cover{
 		margin-bottom: -110px;
