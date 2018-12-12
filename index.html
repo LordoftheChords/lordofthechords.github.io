@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <!-- CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <link type="text/css" rel="stylesheet" href="css/main.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/main.css" />
         <link type="text/css" rel="stylesheet" href="css/fa.css" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,400|Rubik:400,500" rel="stylesheet">
         <link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
@@ -14,6 +14,7 @@
         <!-- <meta name="google-site-verification" content="y2W6f2tZjhyp_sY9iX8SLgE0QZp7SNofvZZHygK625I" /> -->
         <meta name="description" CONTENT="Lord of the Chords is the world's musical-est, punniest and geekiest music theory card game! The first player to form three chords in the key signature wins! Play rests, use 7ths to do chord steals, and activate instrument solos!">
         <meta name="keywords" CONTENT="theory, music, cards, games, kickstarter, funniest, classical, jokes, bach, beethoven, mozart, chopin, debussy">
+        <meta name="p:domain_verify" content="a8dcbfca132f4d8a70738dd1c179d3b9"/>
         <link rel="icon" href="images/favicon.png" type="image/png">
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -63,12 +64,12 @@
                 <nav class="navbar navbar-expand-md fixed-top py-0">
                     <button class="navbar-toggler menu-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="color-white icon-bars navbar-toggler-icon pt-2"></i>
-                        <div class="nav-link color-white timer">
-                            <span id="kickstarter-timer-collapsible"></span>
-                            <span id="kickstarter-timer-seconds-collapsible"></span>
-                        TILL LAUNCH
-                        <a class="nav-link ml-2 px-0" style="display:inline-flex" href="https://www.facebook.com/lordofthechords"><i class="color-gold icon-facebook-official"></i></a>
-                        <a class="nav-link px-0" style="display:inline-flex" href="https://www.instagram.com/lordofthechord"><i class="color-gold icon-instagram"></i></a>
+                        <div class="color-gold" style="padding-top:8px;">
+                            <img src="images/how-to-play/lotc-horizontal.png" style="height:30px;">
+                        </div>
+                        <div class="nav-link color-white">
+                            <a class="nav-link ml-2 px-0" style="display:inline-flex" href="https://www.facebook.com/lordofthechords"><i class="color-gold icon-facebook-official sm-icon"></i></a>
+                            <a class="nav-link px-0" style="display:inline-flex" href="https://www.instagram.com/lordofthechord"><i class="color-gold icon-instagram sm-icon"></i></a>
                         </div>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -80,21 +81,14 @@
                                 <li><a class="nav-link text-white" href="#faq">FAQ</a></li>
                             </ul>
                         <div style="display:inline-flex">
-                            <!-- timer -->
-                            <div class="nav-link color-white timer hidden-menu">
-                                    <span id="kickstarter-timer"></span>
-                                    <span id="kickstarter-timer-seconds"></span>
-                                    TILL LAUNCH
-                            </div>
-                            <a class="nav-link hidden-menu" href="https://www.facebook.com/lordofthechords"><i class="color-gold icon-facebook-official"></i></a>
-                            <a class="nav-link hidden-menu" href="https://www.instagram.com/lordofthechord"><i class="color-gold icon-instagram"></i></a>
+                            <a class="nav-link hidden-menu" href="https://www.facebook.com/lordofthechords"><i class="color-gold icon-facebook-official sm-icon"></i></a>
+                            <a class="nav-link hidden-menu" href="https://www.instagram.com/lordofthechord"><i class="color-gold icon-instagram sm-icon"></i></a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-
-        <div class="container-fluid px-0"  id="cover">
+        <!-- <div class="container-fluid px-0"  id="cover">
             <div class="row">
                 <div class="col-sm px-0">
                     <picture>
@@ -104,6 +98,10 @@
                     </picture>   
                 </div>
             </div>
+        </div> -->
+
+        <div class="intro-video">
+                <iframe src="https://www.youtube.com/embed/ScZp5L01lpU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
         <div class="container-fluid" id="lotc">
@@ -114,7 +112,7 @@
                         <form action="https://lordofthechords.us19.list-manage.com/subscribe/post?u=6b7e4a798687d13a13ac848d5&amp;id=a7ac4d90f8" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                             <div id="mc_embed_signup_scroll" class="align-center">
                                 <div id="subscribe-title" class="subscribe-title">
-                                    GET <span class="highlight">NOTE</span>-IFIED <br class="new-line">WHEN WE LAUNCH
+                                    GET <span class="highlight">NOTE</span>-IFIED WHEN WE LAUNCH IN <span id="kickstarter-timer"></span> DAYS
                                 </div>
                                 <!-- <div class="mc-field-group">
                                     <input type="text" value="" name="FNAME" class="required name" id="mce-FNAME" placeholder = "Wolfgang Amadeus Mozart">
@@ -340,6 +338,7 @@
                     <a href="https://www.facebook.com/lordofthechords"><i class="color-gold icon-facebook-official" style="font-size: large"></i></a>
                     <a href="https://www.instagram.com/lordofthechord"><i class="color-gold icon-instagram" style="font-size: large"></i></a>
                     <br>
+                    Feel free to Bach us at <span class="highlight">hello@lordofthechords.com</span>
                 </div>
                 <div class="clear"></div>
         </div>
@@ -367,6 +366,6 @@
         
             observer.observe()
         </script>
-        <script src="js/main.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

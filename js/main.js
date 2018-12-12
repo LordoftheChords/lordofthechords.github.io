@@ -46,24 +46,14 @@ function timer(){
 
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    var viewport = $( window ).width();
-    //full menu
-    if (viewport > 768){
-      var ks_timer = 'kickstarter-timer';
-      var ks_timer_s = 'kickstarter-timer-seconds';
-    }
-    //collapsible menu
-    else {
-      var ks_timer = 'kickstarter-timer-collapsible';
-      var ks_timer_s = 'kickstarter-timer-seconds-collapsible';
-    }
-        document.getElementById(ks_timer).textContent = days + "d " + hours + "h "
-        + minutes + "m ";
-        document.getElementById(ks_timer_s).textContent = " " + seconds + "s "
+    // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    var ks_timer = 'kickstarter-timer';    
+    document.getElementById(ks_timer).textContent = days;
+    // document.getElementById(ks_timer).textContent = days + "d " + hours + "h "
+    // + minutes + "m ";
+    // document.getElementById(ks_timer_s).textContent = " " + seconds + "s "
 
       // If the count down is finished, write some text 
       if (distance < 0) {

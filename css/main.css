@@ -79,9 +79,6 @@ h1 {
 }
 
 /*---- Menu ----*/
-.nav-link{
-	font-size:large;
-}
 
 .navbar{
 	background: black;
@@ -90,13 +87,12 @@ h1 {
 	display: contents;
 }
 
-/*---- Timer ----*/
-.timer{
-	font-size:small;
+.sm-icon{
+	font-size:large;
 }
 
-#kickstarter-timer-seconds{
-	color: gold;
+#kickstarter-timer{
+	color: #ff2818;
 }
 
 /*---- Header ----*/
@@ -113,13 +109,52 @@ h1 {
 }
 
 /* Main images*/
-#lotc{
+/* #lotc{
 	background: rgba(255, 255, 255);
 	position: absolute;
 	top: 18%;
 	width: 25%;
 	right:8%;
 	border-radius: 25px;
+} */
+
+#lotc{
+	position: relative;
+	max-width: 100%;
+	max-height:100%;
+	min-height: 95%;
+	padding-left: 50px !important;
+	padding-right: 50px !important;
+	width: 100%;
+	right: 0;
+	border-radius: 0px;
+}
+
+/* video */
+.intro-video{
+	position: relative;
+	width:80vw;
+	height:60vh;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:40px;
+	background:black;
+	overflow: hidden;
+
+}
+  
+.intro-video iframe {
+	border: 0;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/* 4x3 Aspect Ratio */
+.intro-video-4x3 {
+padding-top: 75%;
 }
 
 /*---- Signup Form ----*/
@@ -129,9 +164,6 @@ h1 {
 
 .validate{
 	padding-bottom:0px !important;
-}
-
-#mc_embed_signup_scroll { 
 }
 
 #mc_embed_signup .button:hover{
@@ -164,7 +196,7 @@ h1 {
 	display: inline-flex !important;
 	font-size: large !important;
 	margin: 3vh 0 0 0 !important;
-	width: 100% !important;
+	width: 75% !important;
 	min-height:40px !important;
 }
 
@@ -185,7 +217,7 @@ h1 {
 	line-height: 26px !important;
 	background: #ffdb00 !important;
 	margin-top: 3vh !important;
-	width: 100% !important;
+	width: 75% !important;
 	font-weight: bold;
 	color: black !important;
 	font-size: 3.5vh !important;
@@ -218,7 +250,7 @@ h1 {
 .how-to-play-text-left{
 	color: black;
 	text-transform: uppercase;
-	font-size: 3w;
+	font-size: 3vw;
 }
 
 .how-to-play-text-right{
@@ -286,14 +318,14 @@ h1 {
 
 @media screen and (max-width:1024px) {
 
-	#lotc{
+	/* #lotc{
 		background: rgba(255, 255, 255);
 		position: absolute;
 		top: 15%;
 		width: 23%;
 		right:4%;
 		border-radius: 25px;
-	}
+	} */
 	
 
 	h1 {
@@ -329,7 +361,6 @@ h1 {
 		right: 0;
 		border-radius: 0px;
 	}
-
 	.header-section {
 		text-align:center;
 		display: inline-flex;
@@ -346,21 +377,12 @@ h1 {
 	.hidden-menu{
 		display:none !important;
 	}
-	#kickstarter-timer-seconds-collapsible{
-		color: gold;
+	.subscribe-title{
+		font-size:5.5vw;
 	}
 
 	.subscribe-button{
 		font-size: 5.5vw !important;
-		width: 75% !important;
-	}
-
-	.email{
-		width: 75% !important;
-	}
-
-	.subscribe-title{
-		font-size:5.5vw;
 	}
 }
 
@@ -502,10 +524,15 @@ h1 {
 		width: 100% !important;
 	}
 	.email {
+		font-size:medium !important;
 		width:100% !important;
 	}
 	#cover{
 		margin-bottom: -110px;
+	}
+
+	.sm-icon{
+		font-size:medium;
 	}
 }
 
