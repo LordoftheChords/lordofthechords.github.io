@@ -1,9 +1,7 @@
-const observer = lozad(); // lazy loads elements with default selector as '.lozad'
-observer.observe();
+
 
 $(document).ready(function() {    
     // $(".faqAnswer").css("display","none");
-    
     $("body").scroll(function (e) {
         $("body").scrollLeft(0);    
     });
