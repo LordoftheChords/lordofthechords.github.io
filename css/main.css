@@ -112,9 +112,6 @@ h1 {
 	font-weight: 500;
 }
 
-.header-logo {
-	width:100%;
-}
 /* Main images*/
 #lotc{
 	background: rgba(255, 255, 255);
@@ -265,22 +262,12 @@ h1 {
 	font-size: 13px;
 }
 
-
-
-
 /*---- footer ----*/
 
 .footer {
 	background:white;
 }
 
-.footer .container {
-	height:60px;
-}
-
-.footer-logo {
-	width:100px;
-}
 
 .footer-content {
 	bottom:14px;
@@ -290,27 +277,6 @@ h1 {
 	text-align:center;
 	left:16px;
 }
-
-.footer-left {
-	float:left;
-}
-
-.footer-right {
-	float:right;
-}
-
-.footer ul {
-	display:inline-block;
-}
-
-.footer-right li {
-	display:inline-block;
-	padding-left:16px;
-	padding-right:16px;
-	position:relative;
-	top:20px;
-}
-
 
 /*---- Responsive ----*/
 
@@ -439,9 +405,6 @@ h1 {
 		line-height:50px;
 	}
 
-	.header-logo {
-		padding-top:50px;
-	}
 	.subscribe-button{
 		width:100% !important;
 	}
@@ -516,23 +479,6 @@ h1 {
 		height:inherit;
 	}
 
-	.footer a:hover {
-		opacity:0.7;
-	}
-
-	.footer .container {
-		height:inherit;
-	}
-
-	.footer-left {
-		position:relative;
-		top:25px;
-	}
-
-	.footer-logo {
-		display:none;
-	}
-
 }
 
 @media screen and (max-width:465px) {
@@ -568,11 +514,4 @@ h1 {
 		margin-bottom: -100px;
 	}
 
-}
-
-.center-block{
-	display:block; 
-	margin-left:auto; 
-	margin-right:auto;
-	margin-bottom: 5px;
 }
