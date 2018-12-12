@@ -1,7 +1,5 @@
-// initialize an instance of lazyload
-var myLazyLoad = new LazyLoad({
-  elements_selector: ".lazy"
-});
+const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();
 
 $(document).ready(function() {    
     // $(".faqAnswer").css("display","none");
