@@ -36,6 +36,7 @@ h1 {
 
 .p-main {
 	font-size:5vw;
+	margin-bottom:0;
 }
 
 .align-center {
@@ -73,7 +74,7 @@ h1 {
 
 .section {
 	padding-top:2vh;
-	padding-bottom:1vh;
+	padding-bottom:2vh;
 	background:black;
 }
 
@@ -220,19 +221,19 @@ h1 {
 .how-to-play-text-left{
 	color: black;
 	text-transform: uppercase;
-	font-size: 2.5vw;
+	font-size: 3w;
 }
 
 .how-to-play-text-right{
 	color: black;
 	text-transform: uppercase;
-	font-size: 2.5vw;
+	font-size: 3vw;
 }
 
 .how-to-play-text-center{
 	color: black;
 	text-transform: uppercase;
-	font-size: 2.5vw;
+	font-size: 3vw;
 }
 
 /* Social Proof */
