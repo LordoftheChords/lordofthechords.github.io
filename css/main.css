@@ -140,7 +140,6 @@ h1 {
 	margin-top:40px;
 	background:black;
 	overflow: hidden;
-
 }
   
 .intro-video iframe {
@@ -350,6 +349,9 @@ padding-top: 75%;
 	#cover{
 		margin-bottom: -200px;
 	}
+	.intro-video{
+		height:50vh;
+	}
 	#lotc{
 		position: relative;
 		max-width: 100%;
@@ -530,7 +532,9 @@ padding-top: 75%;
 	#cover{
 		margin-bottom: -110px;
 	}
-
+	.intro-video{
+		height:40vh;
+	}
 	.sm-icon{
 		font-size:medium;
 	}
