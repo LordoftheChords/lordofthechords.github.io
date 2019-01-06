@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {    
     $('.navbar-nav>li>a').on('click', function(){
         $('#navbarNav').removeClass("show");
@@ -8,22 +6,34 @@ $(document).ready(function() {
     // leadGen tracking
     // initialize ga instance
     ga('create', 'UA-129405868-1', 'auto');
-    // work in progress
-    $('#mc-embedded-subscribe-form').submit(function(e){
+    
+    var form = $('#mc-embedded-subscribe-form');
+    form.submit(function(e){
       // 
       // if user submits the same email it will still count
       if (!$('.mce_inline_error').is(':visible')){
+        var results = form.serializeArray();
+
+        campaign.identify({
+          firstname: results[0].value,
+          email: results[1].value
+        }, function() {
+            /* optional callback */
+            /* you can hide the form here*/
+            console.log(campaign);
+        });
+
         // fbpixel
         fbq('track', 'Lead');
         // google Adwords
         gtag_report_conversion();
         //google analytics
-        ga('send', {
-          hitType: 'event',
-          eventCategory: 'LeadGen',
-          eventAction: 'sign up',
-          eventLabel: 'Pre-KS-Campaign'
-        });
+        // ga('send', {
+        //   hitType: 'event',
+        //   eventCategory: 'LeadGen',
+        //   eventAction: 'sign up',
+        //   eventLabel: 'Pre-KS-Campaign'
+        // });
       }
       
     })

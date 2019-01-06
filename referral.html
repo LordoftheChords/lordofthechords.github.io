@@ -67,7 +67,6 @@
                 <div class="row">
                     <div data-vl-widget="embedForm"></div>
                     <div data-vl-widget="milestoneWidget"></div>
-                    <div data-vl-widget="referralCountWidget"></div>
                 </div>
             </div>
 
@@ -90,5 +89,25 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
         <script>!function(){var a=window.VL=window.VL||{};return a.instances=a.instances||{},a.invoked?void(window.console&&console.error&&console.error("VL snippet loaded twice.")):(a.invoked=!0,void(a.load=function(b,c,d){var e={};e.publicToken=b,e.config=c||{};var f=document.createElement("script");f.type="text/javascript",f.id="vrlps-js",f.defer=!0,f.src="https://app.viral-loops.com/client/vl/vl.min.js";var g=document.getElementsByTagName("script")[0];return g.parentNode.insertBefore(f,g),f.onload=function(){a.setup(e),a.instances[b]=e},e.identify=e.identify||function(a,b){e.afterLoad={identify:{userData:a,cb:b}}},e.pendingEvents=[],e.track=e.track||function(a,b){e.pendingEvents.push({event:a,cb:b})},e.pendingHooks=[],e.addHook=e.addHook||function(a,b){e.pendingHooks.push({name:a,cb:b})},e.$=e.$||function(a){e.pendingHooks.push({name:"ready",cb:a})},e}))}();var campaign=VL.load("Psd_b9HY_VAVdIfCLblhcjZbKV8",{autoLoadWidgets:!0});</script>
+        <script>
+            $("#myForm").submit(function(e) {  
+            //prevent default form action
+            e.preventDefault();
+            //get the form data
+            var data = $("#myForm").serializeArray();
+            
+            campaign.identify({
+                firstname: data[0].value,
+                lastname: data[1].value,
+                email: data[2].value
+            }, function(x) {
+                //optional callback
+                //you can hide the form here and show the widgets
+                console.log(campaign);
+                $("#form_container").hide();
+                $("#widgets_container").show();
+            });
+            });
+        </script>
     </body>
 </html>
