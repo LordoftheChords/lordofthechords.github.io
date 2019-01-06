@@ -196,6 +196,7 @@ padding-top: 75%;
 }
 
 .subscribe-title{
+	margin-bottom: 3px;
 	font-size:3.5vh;
 	color: black;
 	font-weight: bold;
@@ -204,6 +205,7 @@ padding-top: 75%;
 .subscribe-desc{
 	font-size: 1.8vh;
 	font-weight: bold;
+	margin-top:10px;
 }
 
 .email {
@@ -226,11 +228,11 @@ padding-top: 75%;
 }
 
 .subscribe-button{
-	height: 10vh !important;
 	white-space: normal !important;
 	line-height: 26px !important;
 	background: #ffdb00 !important;
-	width: 75% !important;
+	padding: 20px 0px !important;
+	width: 500px !important;
 	font-weight: bold;
 	color: black !important;
 	font-size: 3.5vh !important;
@@ -330,7 +332,9 @@ padding-top: 75%;
 /*---- Responsive ----*/
 
 @media screen and (max-width:1250px) {
-
+	subscribe-button{
+		width: 500px;
+	}
 }
 
 @media screen and (max-width:1024px) {
@@ -411,11 +415,12 @@ padding-top: 75%;
 		display:none !important;
 	}
 	.subscribe-title{
-		font-size:5.5vw;
+		font-size:4.5vw;
 	}
 
 	.subscribe-button{
-		font-size: 5.5vw !important;
+		padding: 12px 0px !important;
+		font-size: 4.5vw !important;
 	}
 }
 
