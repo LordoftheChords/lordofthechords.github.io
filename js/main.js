@@ -8,11 +8,39 @@ $(document).ready(function() {
     // leadGen tracking
     // initialize ga instance
     ga('create', 'UA-129405868-1', 'auto');
+
+    var form = $('#mc_embed_signup');
+    var milestoneWidget = $('#milestoneWidget');
+    //when the campaign boots
+    campaign.addHook("boot", function() {
+      //if we have a logged in user
+      if (campaign.user && campaign.user.referralCode) {
+          //show the widgets
+          milestoneWidget.show();
+      } else {
+          //show the form
+          form.show();
+      }
+    });
+
     // work in progress
     $('#mc-embedded-subscribe-form').submit(function(e){
       // 
       // if user submits the same email it will still count
-      if (!$('.mce_inline_error').is(':visible')){
+      if (!$('.mce_inline_error').is(':visible')){   
+          //get the form data
+          var data = form.serializeArray();
+          
+          campaign.identify({
+              // firstname: data[0].value,
+              email: data[0].value
+          }, function() {
+              //optional callback
+              //you can hide the form here and show the widgets
+              form.hide();
+              milestoneWidget.show();
+          });
+        
         // fbpixel
         fbq('track', 'Lead');
         // google Adwords
