@@ -9,7 +9,7 @@ $(document).ready(function() {
     // initialize ga instance
     ga('create', 'UA-129405868-1', 'auto');
 
-    var form = $('#mc_embed_signup');
+    var form = $('#mc-embedded-subscribe-form');
     var milestoneWidget = $('#milestoneWidget');
     //when the campaign boots
     campaign.addHook("boot", function() {
@@ -24,7 +24,7 @@ $(document).ready(function() {
     });
 
     // work in progress
-    $('#mc-embedded-subscribe-form').submit(function(e){
+    form.submit(function(e){
       // 
       // if user submits the same email it will still count
       if (!$('.mce_inline_error').is(':visible')){   
