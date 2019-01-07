@@ -9,16 +9,16 @@ $(document).ready(function() {
     // initialize ga instance
     ga('create', 'UA-129405868-1', 'auto');
 
-    var form = $('#mc-embedded-subscribe-form');
+    // var form = $('#mc-embedded-subscribe-form');
+    var form = $('#embedForm');
     var milestoneWidget = $('#milestoneWidget');
     //when the campaign boots
     campaign.addHook("boot", function() {
       //if we have a logged in user
       if (campaign.user && campaign.user.referralCode) {
-          location.href = "https://mypage.com/referral-dashboard" + "?userCode=" + campaign.user.referralCode + "&autoDetect=1";
+          // location.href = "https://mypage.com/referral-dashboard" + "?userCode=" + campaign.user.referralCode + "&autoDetect=1";
           //show the widgets
           milestoneWidget.show();
-          form.hide();
       } else {
           //show the form
           form.show();
