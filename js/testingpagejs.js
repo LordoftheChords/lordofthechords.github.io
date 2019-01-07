@@ -15,6 +15,7 @@ $(document).ready(function() {
     campaign.addHook("boot", function() {
       //if we have a logged in user
       if (campaign.user && campaign.user.referralCode) {
+          location.href = "https://mypage.com/referral-dashboard" + "?userCode=" + campaign.user.referralCode + "&autoDetect=1";
           //show the widgets
           milestoneWidget.show();
       } else {
