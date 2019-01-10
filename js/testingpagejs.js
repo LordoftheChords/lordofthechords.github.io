@@ -10,7 +10,7 @@ $(document).ready(function() {
     ga('create', 'UA-129405868-1', 'auto');
 
     // var form = $('#mc-embedded-subscribe-form');
-    var form = $('#embedForm');
+    var form = $('#participation_form');
     var milestoneWidget = $('#milestoneWidget');
     //when the campaign boots
     campaign.addHook("boot", function() {
@@ -19,26 +19,14 @@ $(document).ready(function() {
           // location.href = "https://mypage.com/referral-dashboard" + "?userCode=" + campaign.user.referralCode + "&autoDetect=1";
           //show the widgets
           milestoneWidget.show();
+          $('#reminder').hide();
       }
     });
-
     // work in progress
     form.submit(function(e){
-      // 
-      // if user submits the same email it will still count
-      if (!$('.mce_inline_error').is(':visible')){   
-          //get the form data
-          var data = form.serializeArray();
-          
-          campaign.identify({
-              // firstname: data[0].value,
-              email: data[0].value
-          }, function() {
-              //optional callback
-              //you can hide the form here and show the widgets
-              form.hide();
-              milestoneWidget.show();
-          });
+
+        form.hide();
+        milestoneWidget.show();
         
         // fbpixel
         fbq('track', 'Lead');
@@ -51,12 +39,8 @@ $(document).ready(function() {
           eventAction: 'sign up',
           eventLabel: 'Pre-KS-Campaign'
         });
-      }
-      
+      });
     })
-    
-});
-
 
 function timer(){
   // Set the date we're counting down to
