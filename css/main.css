@@ -144,6 +144,10 @@ h1 {
 	padding-bottom:40px;
 }
 
+.reaction-video{
+	margin-bottom: 20px;
+}
+
 /*---- Signup Form ----*/
 .new-line{
 	display:none;
@@ -342,10 +346,7 @@ h1 {
 	#cover{
 		margin-bottom: -200px;
 	}
-	.video-lead{
-		width:100%;
-		display:flex;
-	}
+	
 	.video-blank{
 		padding:0;
 	}
@@ -371,6 +372,11 @@ h1 {
 
 	.header-section .button {
 		width:100%;
+	}
+	
+	.video-lead{
+		width:65%;
+		display:inline-flex;
 	}
 
 	.hidden-menu{
@@ -440,6 +446,10 @@ h1 {
 		margin-bottom: -140px;
 	}
 
+	.video-lead{
+		width:100%;
+	}
+
 	.how-to-play-text-left{
 		padding-left: 15vw;
 		width: 50%;
@@ -472,10 +482,6 @@ h1 {
 
 	.team-members{
 		width: 33%;
-	}
-
-	.reaction-video{
-		margin-bottom: 20px;
 	}
 }
 
