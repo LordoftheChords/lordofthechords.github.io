@@ -7,7 +7,7 @@ $(document).ready(function() {
     timer();
     // leadGen tracking
     // initialize ga instance
-    ga('create', 'UA-129405868-1', 'auto');
+    ga('create', 'UA-129405868-2', 'auto');
 
     // var form = $('#mc-embedded-subscribe-form');
     var form = $('#participation_form');
@@ -23,23 +23,23 @@ $(document).ready(function() {
       }
     });
     // work in progress
-    form.submit(function(e){
+    // form.submit(function(e){
 
-        form.hide();
-        milestoneWidget.show();
+    //     form.hide();
+    //     milestoneWidget.show();
         
-        // fbpixel
-        fbq('track', 'Lead');
-        // google Adwords
-        gtag_report_conversion();
-        //google analytics
-        ga('send', {
-          hitType: 'event',
-          eventCategory: 'LeadGen',
-          eventAction: 'sign up',
-          eventLabel: 'Pre-KS-Campaign'
-        });
-      });
+    //     // fbpixel
+    //     fbq('track', 'Lead');
+    //     // google Adwords
+    //     gtag_report_conversion();
+    //     //google analytics
+    //     ga('send', {
+    //       hitType: 'event',
+    //       eventCategory: 'LeadGen',
+    //       eventAction: 'sign up',
+    //       eventLabel: 'Pre-KS-Campaign'
+    //     });
+    //   });
     })
 
 function timer(){
