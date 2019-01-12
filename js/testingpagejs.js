@@ -27,15 +27,16 @@ $(document).ready(function() {
     //   });
     })
 
-function customLOTCVL(){
-  //first widget is form
-  
+function customLOTCVL(){  
   //if we have a logged in user
   if (campaign.user && campaign.user.referralCode) {
+    console.log("here");
     $('#subscribe-title').hide();
     $('#reminder').hide();
     $('#milestoneWidget').attr("data-vl-widget", "milestoneWidget");
     campaign.widgets.reload();
+  } else {
+    console.log("not here");
   }
 }
 
