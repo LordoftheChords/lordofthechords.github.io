@@ -10,7 +10,7 @@ $(document).ready(function() {
     ga('create', 'UA-129405868-2', 'auto');
 
     // var form = $('#mc-embedded-subscribe-form');
-    var form = $('#participation_form');
+    var form = $('#embedForm');
     var milestoneWidget = $('#milestoneWidget');
     //when the campaign boots
     campaign.addHook("boot", function() {
@@ -18,8 +18,11 @@ $(document).ready(function() {
       if (campaign.user && campaign.user.referralCode) {
           // location.href = "https://mypage.com/referral-dashboard" + "?userCode=" + campaign.user.referralCode + "&autoDetect=1";
           //show the widgets
-          milestoneWidget.show();
+          milestoneWidget.load();
           $('#reminder').hide();
+      }
+      else {
+        form.load();
       }
     });
     // work in progress
