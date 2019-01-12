@@ -1,15 +1,9 @@
-$('.navbar-nav>li>a').on('click', function(){
-  $('#navbarNav').removeClass("show");
-});
-timer();
-// leadGen tracking
-// initialize ga instance
-ga('create', 'UA-129405868-2', 'auto');
-
-var form = campaign.widgets.getByType("embedForm");
-var milestoneWidget = campaign.widgets.getByType("milestoneWidget");
+console.log(campaign);
 //when the campaign boots
 campaign.onBoot(function() {
+  console.log("BOOTED");
+  var form = campaign.widgets.getByType("embedForm");
+  var milestoneWidget = campaign.widgets.getByType("milestoneWidget");
   //if we have a logged in user
   if (campaign.user && campaign.user.referralCode) {
       // location.href = "https://mypage.com/referral-dashboard" + "?userCode=" + campaign.user.referralCode + "&autoDetect=1";
@@ -20,25 +14,35 @@ campaign.onBoot(function() {
   else {
     form.load();
   }
-  });
-  // work in progress
-  // form.submit(function(e){
+});
+$(document).ready(function() {    
+    $('.navbar-nav>li>a').on('click', function(){
+        $('#navbarNav').removeClass("show");
+    });
+    timer();
+    // leadGen tracking
+    // initialize ga instance
+    ga('create', 'UA-129405868-2', 'auto');
+    
+    // work in progress
+    // form.submit(function(e){
 
-  //     form.hide();
-  //     milestoneWidget.show();
-      
-  //     // fbpixel
-  //     fbq('track', 'Lead');
-  //     // google Adwords
-  //     gtag_report_conversion();
-  //     //google analytics
-  //     ga('send', {
-  //       hitType: 'event',
-  //       eventCategory: 'LeadGen',
-  //       eventAction: 'sign up',
-  //       eventLabel: 'Pre-KS-Campaign'
-  //     });
-  //   });
+    //     form.hide();
+    //     milestoneWidget.show();
+        
+    //     // fbpixel
+    //     fbq('track', 'Lead');
+    //     // google Adwords
+    //     gtag_report_conversion();
+    //     //google analytics
+    //     ga('send', {
+    //       hitType: 'event',
+    //       eventCategory: 'LeadGen',
+    //       eventAction: 'sign up',
+    //       eventLabel: 'Pre-KS-Campaign'
+    //     });
+    //   });
+    })
 
 function timer(){
   // Set the date we're counting down to
