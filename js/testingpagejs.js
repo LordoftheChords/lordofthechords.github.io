@@ -1,21 +1,4 @@
-console.log(campaign);
-//when the campaign boots
-campaign.onBoot(function() {
-  console.log("BOOTED");
-  var form = campaign.widgets.getByType("embedForm");
-  var milestoneWidget = campaign.widgets.getByType("milestoneWidget");
-  //if we have a logged in user
-  if (campaign.user && campaign.user.referralCode) {
-      // location.href = "https://mypage.com/referral-dashboard" + "?userCode=" + campaign.user.referralCode + "&autoDetect=1";
-      //show the widgets
-      milestoneWidget.load();
-      $('#reminder').hide();
-  }
-  else {
-    form.load();
-  }
-});
-$(document).ready(function() {    
+$(document).ready(function() { 
     $('.navbar-nav>li>a').on('click', function(){
         $('#navbarNav').removeClass("show");
     });
@@ -43,6 +26,18 @@ $(document).ready(function() {
     //     });
     //   });
     })
+
+function customLOTCVL(){
+  //first widget is form
+  
+  //if we have a logged in user
+  if (campaign.user && campaign.user.referralCode) {
+    $('#subscribe-title').hide();
+    $('#reminder').hide();
+    $('#milestoneWidget').attr("data-vl-widget", "milestoneWidget");
+    campaign.widgets.reload();
+  }
+}
 
 function timer(){
   // Set the date we're counting down to
