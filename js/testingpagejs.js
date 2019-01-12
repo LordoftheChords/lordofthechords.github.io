@@ -1,5 +1,4 @@
 $(document).ready(function() { 
-    console.log(window.campaign.user);
     $('.navbar-nav>li>a').on('click', function(){
         $('#navbarNav').removeClass("show");
     });
@@ -27,19 +26,6 @@ $(document).ready(function() {
     //     });
     //   });
     })
-
-function customLOTCVL(){  
-  //if we have a logged in user
-  if (campaign.user && campaign.user.referralCode) {
-    console.log("here");
-    $('#subscribe-title').hide();
-    $('#reminder').hide();
-    $('#milestoneWidget').attr("data-vl-widget", "milestoneWidget");
-    campaign.widgets.reload();
-  } else {
-    console.log("not here");
-  }
-}
 
 function timer(){
   // Set the date we're counting down to
