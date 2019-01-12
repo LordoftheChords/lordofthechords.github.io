@@ -1,4 +1,5 @@
 $(document).ready(function() { 
+    console.log(window.campaign.user);
     $('.navbar-nav>li>a').on('click', function(){
         $('#navbarNav').removeClass("show");
     });
