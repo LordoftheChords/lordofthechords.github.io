@@ -1,49 +1,44 @@
+$('.navbar-nav>li>a').on('click', function(){
+  $('#navbarNav').removeClass("show");
+});
+timer();
+// leadGen tracking
+// initialize ga instance
+ga('create', 'UA-129405868-2', 'auto');
 
+var form = campaign.widgets.getByType("embedForm");
+var milestoneWidget = campaign.widgets.getByType("milestoneWidget");
+//when the campaign boots
+campaign.onBoot(function() {
+  //if we have a logged in user
+  if (campaign.user && campaign.user.referralCode) {
+      // location.href = "https://mypage.com/referral-dashboard" + "?userCode=" + campaign.user.referralCode + "&autoDetect=1";
+      //show the widgets
+      milestoneWidget.load();
+      $('#reminder').hide();
+  }
+  else {
+    form.load();
+  }
+  });
+  // work in progress
+  // form.submit(function(e){
 
-$(document).ready(function() {    
-    $('.navbar-nav>li>a').on('click', function(){
-        $('#navbarNav').removeClass("show");
-    });
-    timer();
-    // leadGen tracking
-    // initialize ga instance
-    ga('create', 'UA-129405868-2', 'auto');
-
-    // var form = $('#mc-embedded-subscribe-form');
-    var form = $('#embedForm');
-    var milestoneWidget = $('#milestoneWidget');
-    //when the campaign boots
-    campaign.addHook("boot", function() {
-      //if we have a logged in user
-      if (campaign.user && campaign.user.referralCode) {
-          // location.href = "https://mypage.com/referral-dashboard" + "?userCode=" + campaign.user.referralCode + "&autoDetect=1";
-          //show the widgets
-          milestoneWidget.load();
-          $('#reminder').hide();
-      }
-      else {
-        form.load();
-      }
-    });
-    // work in progress
-    // form.submit(function(e){
-
-    //     form.hide();
-    //     milestoneWidget.show();
-        
-    //     // fbpixel
-    //     fbq('track', 'Lead');
-    //     // google Adwords
-    //     gtag_report_conversion();
-    //     //google analytics
-    //     ga('send', {
-    //       hitType: 'event',
-    //       eventCategory: 'LeadGen',
-    //       eventAction: 'sign up',
-    //       eventLabel: 'Pre-KS-Campaign'
-    //     });
-    //   });
-    })
+  //     form.hide();
+  //     milestoneWidget.show();
+      
+  //     // fbpixel
+  //     fbq('track', 'Lead');
+  //     // google Adwords
+  //     gtag_report_conversion();
+  //     //google analytics
+  //     ga('send', {
+  //       hitType: 'event',
+  //       eventCategory: 'LeadGen',
+  //       eventAction: 'sign up',
+  //       eventLabel: 'Pre-KS-Campaign'
+  //     });
+  //   });
 
 function timer(){
   // Set the date we're counting down to
