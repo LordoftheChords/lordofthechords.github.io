@@ -6,25 +6,6 @@ $(document).ready(function() {
     // leadGen tracking
     // initialize ga instance
     ga('create', 'UA-129405868-2', 'auto');
-    
-    // work in progress
-    // form.submit(function(e){
-
-    //     form.hide();
-    //     milestoneWidget.show();
-        
-    //     // fbpixel
-    //     fbq('track', 'Lead');
-    //     // google Adwords
-    //     gtag_report_conversion();
-    //     //google analytics
-    //     ga('send', {
-    //       hitType: 'event',
-    //       eventCategory: 'LeadGen',
-    //       eventAction: 'sign up',
-    //       eventLabel: 'Pre-KS-Campaign'
-    //     });
-    //   });
     })
 
 function timer(){
@@ -58,22 +39,5 @@ function timer(){
         document.getElementById(ks_timer_s).innerHTML = "[link]";
       }
   }, 1000);
-}
-
-
-
-
-// Conversion for Google Adwords
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-777186400/xDfyCP7iqZABEODYy_IC',
-      'event_callback': callback
-  });
-  return false;
 }
 
