@@ -1,6 +1,4 @@
-
-
-$(document).ready(function() {    
+$(document).ready(function() { 
     $('.navbar-nav>li>a').on('click', function(){
         $('#navbarNav').removeClass("show");
     });
@@ -8,29 +6,7 @@ $(document).ready(function() {
     // leadGen tracking
     // initialize ga instance
     ga('create', 'UA-129405868-1', 'auto');
-
-    // work in progress
-    $('#mc-embedded-subscribe-form').submit(function(e){
-      // 
-      // if user submits the same email it will still count
-      if (!$('.mce_inline_error').is(':visible')){   
-        // fbpixel
-        fbq('track', 'Lead');
-        // google Adwords
-        gtag_report_conversion();
-        //google analytics
-        ga('send', {
-          hitType: 'event',
-          eventCategory: 'LeadGen',
-          eventAction: 'sign up',
-          eventLabel: 'Pre-KS-Campaign'
-        });
-      }
-      
     })
-    
-});
-
 
 function timer(){
   // Set the date we're counting down to
@@ -45,17 +21,11 @@ function timer(){
     // Find the distance between now and the count down date
     var distance = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
+    // Time calculations for days
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    // var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    // var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
     var ks_timer = 'kickstarter-timer';    
     document.getElementById(ks_timer).textContent = days;
-    // document.getElementById(ks_timer).textContent = days + "d " + hours + "h "
-    // + minutes + "m ";
-    // document.getElementById(ks_timer_s).textContent = " " + seconds + "s "
-
       // If the count down is finished, write some text 
       if (distance < 0) {
         clearInterval(x);
@@ -63,22 +33,5 @@ function timer(){
         document.getElementById(ks_timer_s).innerHTML = "[link]";
       }
   }, 1000);
-}
-
-
-
-
-// Conversion for Google Adwords
-function gtag_report_conversion(url) {
-  var callback = function () {
-    if (typeof(url) != 'undefined') {
-      window.location = url;
-    }
-  };
-  gtag('event', 'conversion', {
-      'send_to': 'AW-777186400/xDfyCP7iqZABEODYy_IC',
-      'event_callback': callback
-  });
-  return false;
 }
 
