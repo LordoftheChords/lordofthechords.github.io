@@ -149,10 +149,6 @@ h1 {
 }
 
 /*---- Signup Form ----*/
-#embedForm{
-	background:url(../images/loader.gif) center 25% no-repeat;
-}
-
 .new-line{
 	display:none;
 }
