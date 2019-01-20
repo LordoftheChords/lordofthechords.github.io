@@ -343,9 +343,6 @@ h1 {
 	.new-line{
 		display:block;
 	}
-	#cover{
-		margin-bottom: -200px;
-	}
 	
 	.video-blank{
 		padding:0;
@@ -392,16 +389,11 @@ h1 {
 }
 
 @media screen and (max-width:705px) {
-	#cover{
-		margin-bottom: -185px;
-	}
+	
 }
 
 @media screen and (max-width:657px) {
-	#cover{
-		margin-bottom: -170px;
-	}
-
+	
 	.menu-icon {
 		color: white !important;
 		display:inherit;
@@ -442,9 +434,6 @@ h1 {
 }
 
 @media screen and (max-width:575px) {
-	#cover{
-		margin-bottom: -140px;
-	}
 
 	.video-lead{
 		width:100%;
@@ -535,9 +524,6 @@ h1 {
 		font-size:medium !important;
 		width:100% !important;
 	}
-	#cover{
-		margin-bottom: -110px;
-	}
 
 	.sm-icon{
 		font-size:medium;
@@ -545,8 +531,5 @@ h1 {
 }
 
 @media screen and (max-width:360px) {
-	#cover{
-		margin-bottom: -100px;
-	}
 
 }
