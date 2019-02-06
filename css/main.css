@@ -496,6 +496,9 @@ h1 {
 }
 
 @media screen and (max-width:465px) {
+	.updates{
+		font-size:small;
+	}
 
 	#embedForm{
 		height: 400px;
