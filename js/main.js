@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 function timer(){
   // Set the date we're counting down to
-  var countDownDate = new Date("Feb 12, 2019 00:00:00").getTime();
+  var countDownDate = new Date("Feb 12, 2019 21:00:00").getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function() {
@@ -23,9 +23,12 @@ function timer(){
 
     // Time calculations for days
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     var ks_timer = 'kickstarter-timer';    
-    document.getElementById(ks_timer).textContent = days;
+    document.getElementById(ks_timer).textContent = days + " DAYS " + hours + " HOURS " + minutes + " MINS";
       // If the count down is finished, write some text 
       if (distance < 0) {
         clearInterval(x);
