@@ -28,7 +28,8 @@ function timer(){
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
     var ks_timer = 'kickstarter-timer';    
-    document.getElementById(ks_timer).textContent = days + " DAYS " + hours + " HOURS " + minutes + " MINS";
+    // document.getElementById(ks_timer).textContent = days + " DAYS " + hours + " HOURS " + minutes + " MINS";
+    document.getElementById(ks_timer).textContent = days + " DAYS ";
       // If the count down is finished, write some text 
       if (distance < 0) {
         clearInterval(x);
