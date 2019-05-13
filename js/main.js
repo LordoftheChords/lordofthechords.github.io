@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 function timer(){
   // Set the date we're counting down to
-  var countDownDate = new Date(Date.UTC(2019, 01, 12, 13, 00, 00, 00)).getTime();
+  var countDownDate = new Date(Date.UTC(2020, 01, 12, 13, 00, 00, 00)).getTime();
 
   // Update the count down every 1 second
   var x = setInterval(function() {
