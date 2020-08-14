@@ -8,6 +8,12 @@ $(document).ready(function () {
   ga("create", "UA-129405868-1", "auto");
 });
 
+$("form#mc-embedded-subscribe-form").submit(function (e) {
+  //Your event goes here ex. dataLayer.push({'event':'eventname'});
+  fbq("track", "Sign Up 2");
+  return true;
+});
+
 function timer() {
   // Set the date we're counting down to
   var countDownDate = new Date(
