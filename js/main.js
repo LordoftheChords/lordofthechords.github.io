@@ -4,13 +4,16 @@ $(document).ready(function () {
   });
   timer();
   // leadGen tracking
-  // initialize ga instance
-  ga("create", "UA-129405868-1", "auto");
 });
 
 $("form#mc-embedded-subscribe-form").submit(function (e) {
   //Your event goes here ex. dataLayer.push({'event':'eventname'});
   fbq("track", "Sign Up 2");
+  ga("send", "event", {
+    eventCategory: "Lead",
+    eventAction: "Submit",
+    eventLabel: "Top Signup Form",
+  });
   return true;
 });
 
