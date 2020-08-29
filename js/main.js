@@ -20,7 +20,7 @@ $("form#mc-embedded-subscribe-form").submit(function (e) {
 function timer() {
   // Set the date we're counting down to
   var countDownDate = new Date(
-    Date.UTC(2020, 09, 22, 21, 00, 00, 00)
+    Date.UTC(2020, 08, 22, 21, 00, 00, 00)
   ).getTime();
 
   // Update the count down every 1 second
