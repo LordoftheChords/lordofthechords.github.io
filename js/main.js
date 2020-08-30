@@ -12,7 +12,7 @@ $("form#mc-embedded-subscribe-form").submit(function (e) {
   ga("send", "event", {
     eventCategory: "Lead",
     eventAction: "Submit",
-    eventLabel: "Top Signup Form",
+    eventLabel: "Backup Signup Form",
   });
   return true;
 });
